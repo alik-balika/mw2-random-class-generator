@@ -6,39 +6,158 @@ export const allWeapons = {
         attachments: [
           {
             name: "Barrel",
-            items: ["a", "b"],
+            items: [
+              "Lach-12 Barrel",
+              "Lachmann Nova",
+              "LM Aurora 90 Barrel",
+              "10.6” Lachstrike Barrel",
+              "15.9” Lachmann RAPP Barrel",
+            ],
           },
           {
             name: "Magazine",
-            items: ["c", "d"],
+            items: ["15 Round Magazine", "40 Round Mag", "60 Round Mag"],
           },
           {
             name: "Stock",
-            items: ["e", "f"],
+            items: [
+              "Lachmann S76 Factory Stock",
+              "LM-S Factory G79 Stock",
+              "RAPP-762 Factory",
+              "FT Mobile Stock",
+              "Lachmann S9 Factory",
+            ],
           },
           {
             name: "Rear Grip",
-            items: ["g", "h"],
+            items: ["LMK64 Grip", "S-Grip Zero", "LM Cronus Grip"],
           },
           {
             name: "Muzzle",
-            items: ["i", "j"],
+            items: [
+              "Corvus Slash Gen. 2",
+              "Dark KX30",
+              "VLK Koloss Flash Hider",
+              "Broadhead-3DP",
+              "Silentfire XG6",
+              "Echoline GS-X",
+              "Harbinger D20",
+              "Echoless-80",
+              "FSS Covert V",
+              "Gauge-9 Mono",
+              "RF Crown 50",
+              "Komodo Heavy",
+              "XTen Ported 290",
+              "Cronen OP44",
+              "FTac Castle Comp",
+              "XTen Havoc 90",
+              "SAKIN Tread-40",
+              "C400 Door Knocker",
+            ],
           },
           {
             name: "Underbarrel",
-            items: ["k", "l"],
+            items: [
+              "Edge-47 Grip",
+              "Demo Firm Grip",
+              "XTEN Gravedigger",
+              "FTac Ripper 56",
+              "Demo Cleanshot 40",
+              "Demo Imp-44 Grip",
+              "FTac Tiger Grip",
+              "FSS Sharkfin 90",
+              "Agent Grip",
+              "Bruen Sync Shot Grip",
+              "XTEN Drop Grip",
+              "Phase-3 Grip",
+              "Merc Foregrip",
+              "Lockgrip Precision-40",
+              "Hex-40 Grip",
+              "Schlager Tango",
+              "VX Pineapple",
+              "OP-X9 Foregrip",
+              "Operator Foregrip",
+              "TV Wrecker Grip",
+              "Bruen Tilt Grip",
+              "Cronen Grooveshot Grip",
+              "Bruen Warrior Grip",
+              "Bipod V9 Grip",
+              "Level Aim Bipod",
+              "Cornerstone Bipod",
+              "XTen Stable Shot",
+              "Corvus Masterkey",
+              "TL40 Fire Drake",
+            ],
           },
           {
             name: "Ammunition",
-            items: ["m", "n"],
+            items: [
+              "5.56 Frangible",
+              "5.56 Armor Piercing",
+              "5.56 Overpressured +P",
+              "5.56 High Velocity",
+            ],
           },
           {
             name: "Laser",
-            items: ["o", "p"],
+            items: [
+              "SZ 1MW PEQ",
+              "Schlager PEQ Box IV",
+              "Corio LAZ-44 V3",
+              "FSS OLE-V Laser",
+              "Canted Vibro-Dot 7",
+              "1MW Laser Box",
+              "STOVL DR Laser Box",
+              "Corvus PEQ Beam-5",
+              "FTac Grimline Laser",
+              "Luminate-44",
+              "DXS Flash 90",
+            ],
           },
           {
             name: "Optic",
-            items: ["q", "r"],
+            items: [
+              "Slimline Pro",
+              "SZ Mini",
+              "Cronen Mini Red Dot",
+              "Cronen Mini Pro",
+              "SZ Sigma-IV Optic",
+              "SZ Minitac-40",
+              "XRK On-Point Optic",
+              "DF105 Reflex Sight",
+              "Monocle CT90",
+              "Corvus SOL-76",
+              "SZ Recharge-DX",
+              "SZ SRO-7",
+              "Corio RE-X Pro",
+              "Corio Enforcer Optic",
+              "SZ Lonewolf Optic",
+              "Kazan-Holo",
+              "Corvus Downrange-00",
+              "SZ Holotherm",
+              "XTEN Angel-40",
+              "VLK 4.0 Optic",
+              "Schlager 4X",
+              "Forge Tac Delta 4",
+              "Cronen Zero-P Optic",
+              "SZ Bullseye Optic",
+              "SZ Aggressor-IR Optic",
+              "Schlager Night View",
+              "VX350 Thermal Optic",
+              "Teplo-OP3 Scope",
+              "DR582 Hybrid Sight",
+              "Hybrid Firepoint",
+              "BPZ40 Hybrid",
+              "SZ Vortex-90",
+              "Angel-40 4.8x",
+              "Thermo-Optic X9",
+              "Teplo Clear Shot",
+              "FTac Charlie7",
+              "HMW-20 Optic",
+              "Luca Bandera Scope",
+              "Drexsom Prime-90",
+              "ARES Clear Shot",
+            ],
           },
         ],
       },
@@ -47,226 +166,2600 @@ export const allWeapons = {
         attachments: [
           {
             name: "Barrel",
-            items: ["a", "b"],
+            items: [
+              "Tempus Trench Pro",
+              "419MM EXF Barrel",
+              "Hightower 20” Barrel",
+              "11.5” T-H4 Barrel",
+              "11.5” Carbine Shroud",
+              "14” Carbine Shroud",
+              "7.5” Tempus Firebrand",
+            ],
           },
           {
             name: "Magazine",
-            items: ["c", "d"],
+            items: ["45 Round Mag", "60 Round Mag"],
           },
           {
             name: "Stock",
-            items: ["e", "f"],
+            items: [
+              "Ravage-8",
+              "Tempus P80 Strike Stock",
+              "Corio Precio Factory",
+              "Demo D50 Buffer Tube",
+              "Demo Fade Pro Stock",
+              "Demo Precision Elite Factory",
+            ],
           },
           {
             name: "Rear Grip",
-            items: ["g", "h"],
+            items: [
+              "Sakin ZX Grip",
+              "D15 Grip",
+              "XTEN Grip",
+              "Phantom Grip",
+              "Support CP90 Grip",
+            ],
           },
           {
             name: "Muzzle",
-            items: ["i", "j"],
+            items: [
+              "Echoline GS-X",
+              "Corvus Slash Gen. 2",
+              "Dark KX30",
+              "VLK Koloss Flash Hider",
+              "Broadhead-3DP",
+              "Silentfire XG6",
+              "Harbinger D20",
+              "Echoless-80",
+              "FSS Covert V",
+              "Gauge-9 Mono",
+              "RF Crown 50",
+              "Komodo Heavy",
+              "XTen Ported 290",
+              "Cronen OP44",
+              "FTac Castle Comp",
+              "XTen Havoc 90",
+              "SAKIN Tread-40",
+              "C400 Door Knocker",
+            ],
           },
           {
             name: "Underbarrel",
-            items: ["k", "l"],
+            items: [
+              "Phase-3 Grip",
+              "Merc Foregrip",
+              "Lockgrip Precision-40",
+              "Hex-40 Grip",
+              "Schlager Tango",
+              "VX Pineapple",
+              "OP-X9 Foregrip",
+              "TV Wrecker Grip",
+              "Bruen Tilt Grip",
+              "Cronen Grooveshot Grip",
+              "Bruen Warrior Grip",
+              "Bipod V9 Grip",
+              "Level Aim Bipod",
+              "Cornerstone Bipod",
+              "XTen Stable Shot",
+              "SPW 40mm",
+              "Corvus Masterkey",
+              "FSS Sharkfin 90",
+              "Operator Foregrip",
+              "Edge-47 Grip",
+              "Demo Firm Grip",
+              "XTEN Gravedigger",
+              "FTac Ripper 56",
+              "Demo Cleanshot 40",
+              "Demo Imp-44 Grip",
+              "FTac Tiger Grip",
+              "Agent Grip",
+              "Bruen Sync Shot Grip",
+              "XTEN Drop Grip",
+            ],
           },
           {
             name: "Ammunition",
-            items: ["m", "n"],
+            items: [
+              "5.56 Armor Piercing",
+              "5.56 Overpressured +P",
+              "5.56 Frangible",
+              "5.56 High Velocity",
+            ],
           },
           {
             name: "Laser",
-            items: ["o", "p"],
+            items: [
+              "Corio LAZ-44 V3",
+              "1MW Laser Box",
+              "Luminate-44",
+              "SZ 1MW PEQ",
+              "Schlager PEQ Box IV",
+              "FSS OLE-V Laser",
+              "Canted Vibro-Dot 7",
+              "STOVL DR Laser Box",
+              "Corvus PEQ Beam-5",
+              "FTac Grimline Laser",
+              "DXS Flash 90",
+            ],
           },
           {
             name: "Optic",
-            items: ["q", "r"],
+            items: [
+              "SZ Mini",
+              "Corvus SOL-76",
+              "Corio RE-X Pro",
+              "SZ Lonewolf Optic",
+              "DR582 Hybrid Sight",
+              "Slimline Pro",
+              "Cronen Mini Red Dot",
+              "Cronen Mini Pro",
+              "SZ Sigma-IV Optic",
+              "SZ Minitac-40",
+              "XRK On-Point Optic",
+              "DF105 Reflex Sight",
+              "Monocle CT90",
+              "SZ Recharge-DX",
+              "SZ SRO-7",
+              "Corio Enforcer Optic",
+              "Kazan-Holo",
+              "Corvus Downrange-00",
+              "SZ Holotherm",
+              "XTEN Angel-40",
+              "VLK 4.0 Optic",
+              "Schlager 4X",
+              "Forge Tac Delta 4",
+              "Cronen Zero-P Optic",
+              "SZ Bullseye Optic",
+              "SZ Aggressor-IR Optic",
+              "Schlager Night View",
+              "VX350 Thermal Optic",
+              "Teplo-OP3 Scope",
+              "Hybrid Firepoint",
+              "SZ Vortex-90",
+              "BPZ40 Hybrid",
+              "Angel-40 4.8x",
+              "Thermo-Optic X9",
+              "Teplo Clear Shot",
+              "FTac Charlie7",
+              "HMW-20 Optic",
+              "Luca Bandera Scope",
+              "Drexsom Prime-90",
+              "ARES Clear Shot",
+            ],
           },
         ],
       },
       m16: {
         name: "M16",
-        attachments: [],
+        attachments: [
+          {
+            name: "Barrel",
+            items: [
+              "14” Carbine Shroud",
+              "Demo 501 Factory",
+              "11.5” Carbine Shroud",
+              "11.5” T-H4 Barrel",
+            ],
+          },
+          {
+            name: "Magazine",
+            items: ["15 Round Magazine", "45 Round Mag", "60 Round Mag"],
+          },
+          {
+            name: "Stock",
+            items: [
+              "Assault-60 Stock Factory",
+              "Ravage-8",
+              "Demo Fade Pro Stock",
+              "Corio Precio Factory",
+            ],
+          },
+          {
+            name: "Rear Grip",
+            items: [
+              "D15 Grip",
+              "Sakin ZX Grip",
+              "XTEN Grip",
+              "Support CP90 Grip",
+            ],
+          },
+          {
+            name: "Muzzle",
+            items: [
+              "Corvus Slash Gen. 2",
+              "Dark KX30",
+              "VLK Koloss Flash Hider",
+              "Broadhead-3DP",
+              "Silentfire XG6",
+              "Echoline GS-X",
+              "Harbinger D20",
+              "Echoless-80",
+              "FSS Covert V",
+              "Gauge-9 Mono",
+              "RF Crown 50",
+              "Komodo Heavy",
+              "XTen Ported 290",
+              "Cronen OP44",
+              "FTac Castle Comp",
+              "XTen Havoc 90",
+              "SAKIN Tread-40",
+              "C400 Door Knocker",
+            ],
+          },
+          {
+            name: "Underbarrel",
+            items: [
+              "Schlager Tango",
+              "VX Pineapple",
+              "OP-X9 Foregrip",
+              "Operator Foregrip",
+              "TV Wrecker Grip",
+              "Bruen Tilt Grip",
+              "Cronen Grooveshot Grip",
+              "Bruen Warrior Grip",
+              "Bipod V9 Grip",
+              "Level Aim Bipod",
+              "Cornerstone Bipod",
+              "XTen Stable Shot",
+              "SPW 40mm",
+              "Corvus Masterkey",
+              "Edge-47 Grip",
+              "Demo Firm Grip",
+              "XTEN Gravedigger",
+              "FTac Ripper 56",
+              "Demo Cleanshot 40",
+              "Demo Imp-44 Grip",
+              "FTac Tiger Grip",
+              "FSS Sharkfin 90",
+              "Agent Grip",
+              "Bruen Sync Shot Grip",
+              "XTEN Drop Grip",
+              "Phase-3 Grip",
+              "Merc Foregrip",
+              "Lockgrip Precision-40",
+              "Hex-40 Grip",
+            ],
+          },
+          {
+            name: "Ammunition",
+            items: [
+              "5.56 Frangible",
+              "5.56 High Velocity",
+              "5.56 Overpressured +P",
+              "5.56 Armor Piercing",
+            ],
+          },
+          {
+            name: "Laser",
+            items: [
+              "SZ 1MW PEQ",
+              "Schlager PEQ Box IV",
+              "Corio LAZ-44 V3",
+              "FSS OLE-V Laser",
+              "Canted Vibro-Dot 7",
+              "1MW Laser Box",
+              "STOVL DR Laser Box",
+              "Corvus PEQ Beam-5",
+              "FTac Grimline Laser",
+              "Luminate-44",
+              "DXS Flash 90",
+            ],
+          },
+          {
+            name: "Optic",
+            items: [
+              "Slimline Pro",
+              "SZ Mini",
+              "Cronen Mini Red Dot",
+              "Cronen Mini Pro",
+              "SZ Sigma-IV Optic",
+              "SZ Minitac-40",
+              "XRK On-Point Optic",
+              "DF105 Reflex Sight",
+              "Monocle CT90",
+              "Corvus SOL-76",
+              "SZ Recharge-DX",
+              "SZ SRO-7",
+              "Corio RE-X Pro",
+              "Corio Enforcer Optic",
+              "SZ Lonewolf Optic",
+              "Kazan-Holo",
+              "Corvus Downrange-00",
+              "SZ Holotherm",
+              "XTEN Angel-40",
+              "VLK 4.0 Optic",
+              "Schlager 4X",
+              "Forge Tac Delta 4",
+              "Cronen Zero-P Optic",
+              "SZ Bullseye Optic",
+              "SZ Aggressor-IR Optic",
+              "Schlager Night View",
+              "VX350 Thermal Optic",
+              "Teplo-OP3 Scope",
+              "DR582 Hybrid Sight",
+              "Hybrid Firepoint",
+              "SZ Vortex-90",
+              "BPZ40 Hybrid",
+              "Angel-40 4.8x",
+              "Thermo-Optic X9",
+              "Teplo Clear Shot",
+              "FTac Charlie7",
+              "HMW-20 Optic",
+              "Luca Bandera Scope",
+              "Drexsom Prime-90",
+              "ARES Clear Shot",
+            ],
+          },
+        ],
       },
       kastov74u: {
         name: "Kastov-74u",
         attachments: [
           {
+            name: "Barrel",
+            items: ["SA Ultra III", "ShortTAC 330mm", "BR209 Barrel"],
+          },
+          {
+            name: "Magazine",
+            items: ["20 Round Mag", "45 Round Mag"],
+          },
+          {
+            name: "Stock",
+            items: [
+              "Ivanov Wood Stock",
+              "KSTV-RPK Factory",
+              "Spetsnaz S10 Stock",
+              "FT TAC-Elite Stock",
+              "Markeev R7 Stock",
+              "OTREZAT Stock",
+              "VLK Stockless",
+            ],
+          },
+          {
+            name: "Rear Grip",
+            items: ["Ivanov ST-70 Grip", "Demo-X2 Grip", "True-TAC Grip"],
+          },
+          {
+            name: "Muzzle",
+            items: [
+              "Gauge-9 Mono",
+              "RF Crown 50",
+              "Komodo Heavy",
+              "XTen Ported 290",
+              "Cronen OP44",
+              "FTac Castle Comp",
+              "XTen Havoc 90",
+              "SAKIN Tread-40",
+              "C400 Door Knocker",
+              "Corvus Slash Gen. 2",
+              "Dark KX30",
+              "VLK Koloss Flash Hider",
+              "Broadhead-3DP",
+              "Silentfire XG6",
+              "Echoline GS-X",
+              "Harbinger D20",
+              "Echoless-80",
+              "FSS Covert V",
+            ],
+          },
+          {
+            name: "Underbarrel",
+            items: [
+              "FTac Tiger Grip",
+              "FSS Sharkfin 90",
+              "Agent Grip",
+              "Bruen Sync Shot Grip",
+              "XTEN Drop Grip",
+              "Phase-3 Grip",
+              "Merc Foregrip",
+              "Lockgrip Precision-40",
+              "Hex-40 Grip",
+              "Schlager Tango",
+              "VX Pineapple",
+              "OP-X9 Foregrip",
+              "Operator Foregrip",
+              "TV Wrecker Grip",
+              "Bruen Tilt Grip",
+              "Cronen Grooveshot Grip",
+              "Bruen Warrior Grip",
+              "Bipod V9 Grip",
+              "Level Aim Bipod",
+              "Cornerstone Bipod",
+              "XTen Stable Shot",
+            ],
+          },
+          {
+            name: "Ammunition",
+            items: [
+              "5.45 Frangible",
+              "5.45 Hollowpoint",
+              "5.45 Armor Piercing",
+              "5.45 Overpressured +P",
+              "5.45 High Velocity",
+            ],
+          },
+          {
+            name: "Laser",
+            items: [
+              "SZ 1MW PEQ",
+              "Schlager PEQ Box IV",
+              "Corio LAZ-44 V3",
+              "FSS OLE-V Laser",
+              "Canted Vibro-Dot 7",
+              "1MW Laser Box",
+              "STOVL DR Laser Box",
+              "Corvus PEQ Beam-5",
+              "FTac Grimline Laser",
+              "Luminate-44",
+              "DXS Flash 90",
+            ],
+          },
+          {
             name: "Optic",
-            items: ["a"],
+            items: [
+              "Slimline Pro",
+              "SZ Mini",
+              "Cronen Mini Red Dot",
+              "Cronen Mini Pro",
+              "SZ Sigma-IV Optic",
+              "SZ Minitac-40",
+              "XRK On-Point Optic",
+              "DF105 Reflex Sight",
+              "Monocle CT90",
+              "Corvus SOL-76",
+              "SZ Recharge-DX",
+              "SZ SRO-7",
+              "Corio RE-X Pro",
+              "Corio Enforcer Optic",
+              "SZ Lonewolf Optic",
+              "Kazan-Holo",
+              "Corvus Downrange-00",
+              "SZ Holotherm",
+              "XTEN Angel-40",
+              "VLK 4.0 Optic",
+              "Schlager 4X",
+              "Forge Tac Delta 4",
+              "Cronen Zero-P Optic",
+              "SZ Bullseye Optic",
+              "SZ Aggressor-IR Optic",
+              "Schlager Night View",
+              "VX350 Thermal Optic",
+              "Teplo-OP3 Scope",
+              "DR582 Hybrid Sight",
+              "Hybrid Firepoint",
+              "SZ Vortex-90",
+              "BPZ40 Hybrid",
+              "Angel-40 4.8x",
+              "Thermo-Optic X9",
+              "Teplo Clear Shot",
+            ],
           },
         ],
       },
       taq56: {
         name: "TAQ-56",
-        attachments: [],
+        attachments: [
+          {
+            name: "Barrel",
+            items: ["12” Tacshort Barrel", "17.5” Tundra Pro Barrel"],
+          },
+          {
+            name: "Magazine",
+            items: ["40 Round Mag", "60 Round Mag"],
+          },
+          {
+            name: "Stock",
+            items: [
+              "Tactique Brute Stock",
+              "TV XLINE Pro",
+              "TV LPX-434",
+              "TV Cardinal Stock",
+            ],
+          },
+          {
+            name: "Rear Grip",
+            items: [
+              "XRK Response Grip",
+              "FSS Combat Grip",
+              "Demo Cleanshot Grip",
+            ],
+          },
+          {
+            name: "Muzzle",
+            items: [
+              "Corvus Slash Gen. 2",
+              "Dark KX30",
+              "VLK Koloss Flash Hider",
+              "Broadhead-3DP",
+              "Silentfire XG6",
+              "Echoline GS-X",
+              "Harbinger D20",
+              "Echoless-80",
+              "FSS Covert V",
+              "Gauge-9 Mono",
+              "RF Crown 50",
+              "Komodo Heavy",
+              "XTen Ported 290",
+              "Cronen OP44",
+              "FTac Castle Comp",
+              "XTen Havoc 90",
+              "SAKIN Tread-40",
+              "C400 Door Knocker",
+            ],
+          },
+          {
+            name: "Underbarrel",
+            items: [
+              "Edge-47 Grip",
+              "Demo Firm Grip",
+              "XTEN Gravedigger",
+              "FTac Ripper 56",
+              "Demo Cleanshot 40",
+              "Demo Imp-44 Grip",
+              "FTac Tiger Grip",
+              "FSS Sharkfin 90",
+              "Agent Grip",
+              "Bruen Sync Shot Grip",
+              "XTEN Drop Grip",
+              "Phase-3 Grip",
+              "Merc Foregrip",
+              "Lockgrip Precision-40",
+              "Hex-40 Grip",
+              "Schlager Tango",
+              "VX Pineapple",
+              "OP-X9 Foregrip",
+              "Operator Foregrip",
+              "TV Wrecker Grip",
+              "Bruen Tilt Grip",
+              "Cronen Grooveshot Grip",
+              "Bruen Warrior Grip",
+              "Bipod V9 Grip",
+              "Level Aim Bipod",
+              "Cornerstone Bipod",
+              "XTen Stable Shot",
+              "Hellscream 40mm",
+              "Corvus Masterkey",
+            ],
+          },
+          {
+            name: "Ammunition",
+            items: [
+              "5.56 Frangible",
+              "5.56 Armor Piercing",
+              "5.56 Overpressured +P",
+              "5.56 High Velocity",
+            ],
+          },
+          {
+            name: "Laser",
+            items: [
+              "SZ 1MW PEQ",
+              "Schlager PEQ Box IV",
+              "Corio LAZ-44 V3",
+              "FSS OLE-V Laser",
+              "Canted Vibro-Dot 7",
+              "1MW Laser Box",
+              "STOVL DR Laser Box",
+              "Corvus PEQ Beam-5",
+              "FTac Grimline Laser",
+              "Luminate-44",
+              "DXS Flash 90",
+            ],
+          },
+          {
+            name: "Optic",
+            items: [
+              "SZ Bullseye Optic",
+              "SZ Aggressor-IR Optic",
+              "Schlager Night View",
+              "VX350 Thermal Optic",
+              "Teplo-OP3 Scope",
+              "DR582 Hybrid Sight",
+              "Hybrid Firepoint",
+              "SZ Vortex-90",
+              "BPZ40 Hybrid",
+              "Angel-40 4.8x",
+              "Thermo-Optic X9",
+              "Teplo Clear Shot",
+              "FTac Charlie7",
+              "HMW-20 Optic",
+              "Luca Bandera Scope",
+              "Drexsom Prime-90",
+              "ARES Clear Shot",
+              "Slimline Pro",
+              "SZ Mini",
+              "Cronen Mini Red Dot",
+              "Cronen Mini Pro",
+              "SZ Sigma-IV Optic",
+              "SZ Minitac-40",
+              "XRK On-Point Optic",
+              "DF105 Reflex Sight",
+              "Monocle CT90",
+              "Corvus SOL-76",
+              "SZ Recharge-DX",
+              "SZ SRO-7",
+              "Corio RE-X Pro",
+              "Corio Enforcer Optic",
+              "SZ Lonewolf Optic",
+              "Kazan-Holo",
+              "Corvus Downrange-00",
+              "SZ Holotherm",
+              "XTEN Angel-40",
+              "VLK 4.0 Optic",
+              "Schlager 4X",
+              "Forge Tac Delta 4",
+              "Cronen Zero-P Optic",
+            ],
+          },
+        ],
       },
       kastov762: {
         name: "Kastov 762",
-        attachments: [],
+        attachments: [
+          {
+            name: "Barrel",
+            items: [
+              "Kastovia 343",
+              "KAS-10 584mm Barrel",
+              "KAS-7 406mm",
+              "IG-K30 406mm",
+              "342mm SAKIN KL",
+            ],
+          },
+          {
+            name: "Magazine",
+            items: ["20 Round Mag", "40 Round Mag"],
+          },
+          {
+            name: "Stock",
+            items: [
+              "Ivanov Wood Stock",
+              "KSTV-RPK Factory",
+              "FT TAC-Elite Stock",
+              "Kastov-Rama",
+              "ProLite TL3 Stock",
+              "Markeev R7 Stock",
+            ],
+          },
+          {
+            name: "Rear Grip",
+            items: ["Ivanov ST-70 Grip", "Demo-X2 Grip", "True-TAC Grip"],
+          },
+          {
+            name: "Muzzle",
+            items: [
+              "Eight-Point Flash Hider",
+              "TZL-90 V3",
+              "Cronen Dark KX30",
+              "Husher-65 Silencer",
+              "Polarfire-S",
+              "ZLR Talon 5",
+              "Echoline GS-X",
+              "ZULU-60",
+              "Kastovia DX90",
+              "Tempus GH50",
+              "TY-LR8",
+              "Lockshot KT85",
+              "Bore-490",
+              "SAKIN Tread-40",
+              "GL Clear Breach",
+              "TA Hul-Breach KL",
+            ],
+          },
+          {
+            name: "Underbarrel",
+            items: [
+              "Edge-47 Grip",
+              "Demo Firm Grip",
+              "XTEN Gravedigger",
+              "FTac Ripper 56",
+              "Demo Cleanshot 40",
+              "Demo Imp-44 Grip",
+              "FTac Tiger Grip",
+              "FSS Sharkfin 90",
+              "Agent Grip",
+              "Bruen Sync Shot Grip",
+              "XTEN Drop Grip",
+              "Phase-3 Grip",
+              "Merc Foregrip",
+              "Lockgrip Precision-40",
+              "Hex-40 Grip",
+              "Schlager Tango",
+              "VX Pineapple",
+              "OP-X9 Foregrip",
+              "Operator Foregrip",
+              "TV Wrecker Grip",
+              "Bruen Tilt Grip",
+              "Cronen Grooveshot Grip",
+              "Bruen Warrior Grip",
+              "Bipod V9 Grip",
+              "Level Aim Bipod",
+              "Cornerstone Bipod",
+              "XTen Stable Shot",
+              "KL40-M2",
+              "Corvus Masterkey",
+            ],
+          },
+          {
+            name: "Ammunition",
+            items: [
+              "7.62 Frangible",
+              "7.62 Hollowpoint",
+              "7.62 Armor Piercing",
+              "7.62 Overpressured +P",
+              "7.62 High Velocity",
+            ],
+          },
+          {
+            name: "Laser",
+            items: [
+              "SZ 1MW PEQ",
+              "Schlager PEQ Box IV",
+              "Corio LAZ-44 V3",
+              "FSS OLE-V Laser",
+              "Canted Vibro-Dot 7",
+              "1MW Laser Box",
+              "STOVL DR Laser Box",
+              "Corvus PEQ Beam-5",
+              "FTac Grimline Laser",
+              "Luminate-44",
+              "DXS Flash 90",
+            ],
+          },
+          {
+            name: "Optic",
+            items: [
+              "Slimline Pro",
+              "HMW-20 Optic",
+              "Luca Bandera Scope",
+              "Drexsom Prime-90",
+              "ARES Clear Shot",
+              "SZ Mini",
+              "Cronen Mini Red Dot",
+              "Cronen Mini Pro",
+              "SZ Sigma-IV Optic",
+              "SZ Minitac-40",
+              "XRK On-Point Optic",
+              "DF105 Reflex Sight",
+              "Monocle CT90",
+              "Corvus SOL-76",
+              "SZ Recharge-DX",
+              "SZ SRO-7",
+              "Corio RE-X Pro",
+              "Corio Enforcer Optic",
+              "SZ Lonewolf Optic",
+              "Kazan-Holo",
+              "Corvus Downrange-00",
+              "SZ Holotherm",
+              "XTEN Angel-40",
+              "VLK 4.0 Optic",
+              "Schlager 4X",
+              "Forge Tac Delta 4",
+              "Cronen Zero-P Optic",
+              "SZ Bullseye Optic",
+              "SZ Aggressor-IR Optic",
+              "Schlager Night View",
+              "VX350 Thermal Optic",
+              "Teplo-OP3 Scope",
+              "DR582 Hybrid Sight",
+              "Hybrid Firepoint",
+              "SZ Vortex-90",
+              "BPZ40 Hybrid",
+              "Angel-40 4.8x",
+              "Thermo-Optic X9",
+              "Teplo Clear Shot",
+              "FTac Charlie7",
+            ],
+          },
+        ],
       },
       kastov545: {
         name: "Kastov 545",
-        attachments: [],
+        attachments: [
+          {
+            name: "Barrel",
+            items: [
+              "KAS-7 406mm",
+              "Kastovia 406",
+              "IG-K30 406mm",
+              "342mm SAKIN KL",
+            ],
+          },
+          {
+            name: "Magazine",
+            items: ["60 Round Mag", "20 Round Mag", "45 Round Mag"],
+          },
+          {
+            name: "Stock",
+            items: [
+              "Ivanov Wood Stock",
+              "KSTV-RPK Factory",
+              "FT TAC-Elite Stock",
+              "Kastov-Rama",
+              "ProLite TL3 Stock",
+              "Markeev R7 Stock",
+            ],
+          },
+          {
+            name: "Rear Grip",
+            items: ["Ivanov ST-70 Grip", "Demo-X2 Grip", "True-TAC Grip"],
+          },
+          {
+            name: "Muzzle",
+            items: [
+              "C400 Door Knocker",
+              "Corvus Slash Gen. 2",
+              "Dark KX30",
+              "VLK Koloss Flash Hider",
+              "Broadhead-3DP",
+              "Silentfire XG6",
+              "Echoline GS-X",
+              "Harbinger D20",
+              "Echoless-80",
+              "FSS Covert V",
+              "Gauge-9 Mono",
+              "RF Crown 50",
+              "Komodo Heavy",
+              "XTen Ported 290",
+              "Cronen OP44",
+              "FTac Castle Comp",
+              "XTen Havoc 90",
+              "SAKIN Tread-40",
+            ],
+          },
+          {
+            name: "Underbarrel",
+            items: [
+              "Edge-47 Grip",
+              "Demo Firm Grip",
+              "XTEN Gravedigger",
+              "FTac Ripper 56",
+              "Demo Cleanshot 40",
+              "Demo Imp-44 Grip",
+              "FTac Tiger Grip",
+              "FSS Sharkfin 90",
+              "Agent Grip",
+              "Bruen Sync Shot Grip",
+              "XTEN Drop Grip",
+              "Phase-3 Grip",
+              "Merc Foregrip",
+              "Lockgrip Precision-40",
+              "Hex-40 Grip",
+              "Schlager Tango",
+              "VX Pineapple",
+              "OP-X9 Foregrip",
+              "Operator Foregrip",
+              "TV Wrecker Grip",
+              "Bruen Tilt Grip",
+              "Cronen Grooveshot Grip",
+              "Bruen Warrior Grip",
+              "Bipod V9 Grip",
+              "Level Aim Bipod",
+              "Cornerstone Bipod",
+              "XTen Stable Shot",
+              "KL40-M2",
+              "Corvus Masterkey",
+            ],
+          },
+          {
+            name: "Ammunition",
+            items: [
+              "5.45 Frangible",
+              "5.45 Hollowpoint",
+              "5.45 Armor Piercing",
+              "5.45 Overpressured +P",
+              "5.45 High Velocity",
+            ],
+          },
+          {
+            name: "Laser",
+            items: [
+              "SZ 1MW PEQ",
+              "Schlager PEQ Box IV",
+              "Corio LAZ-44 V3",
+              "FSS OLE-V Laser",
+              "Canted Vibro-Dot 7",
+              "1MW Laser Box",
+              "STOVL DR Laser Box",
+              "Corvus PEQ Beam-5",
+              "FTac Grimline Laser",
+              "Luminate-44",
+              "DXS Flash 90",
+            ],
+          },
+          {
+            name: "Optic",
+            items: [
+              "Slimline Pro",
+              "SZ Mini",
+              "Cronen Mini Red Dot",
+              "Cronen Mini Pro",
+              "SZ Sigma-IV Optic",
+              "SZ Minitac-40",
+              "XRK On-Point Optic",
+              "DF105 Reflex Sight",
+              "Monocle CT90",
+              "Corvus SOL-76",
+              "SZ Recharge-DX",
+              "SZ SRO-7",
+              "Corio RE-X Pro",
+              "Corio Enforcer Optic",
+              "SZ Lonewolf Optic",
+              "Kazan-Holo",
+              "Corvus Downrange-00",
+              "SZ Holotherm",
+              "VLK 4.0 Optic",
+              "Schlager 4X",
+              "Forge Tac Delta 4",
+              "Cronen Zero-P Optic",
+              "SZ Bullseye Optic",
+              "SZ Aggressor-IR Optic",
+              "Schlager Night View",
+              "VX350 Thermal Optic",
+              "Teplo-OP3 Scope",
+              "DR582 Hybrid Sight",
+              "Hybrid Firepoint",
+              "SZ Vortex-90",
+              "BPZ40 Hybrid",
+              "XTEN Angel-40",
+              "Angel-40 4.8x",
+              "Thermo-Optic X9",
+              "Teplo Clear Shot",
+              "FTac Charlie7",
+              "HMW-20 Optic",
+              "Luca Bandera Scope",
+              "Drexsom Prime-90",
+              "ARES Clear Shot",
+            ],
+          },
+        ],
       },
       stb556: {
         name: "STB 556",
-        attachments: [],
+        attachments: [
+          {
+            name: "Barrel",
+            items: [
+              "Bruen Turaco 686mm",
+              "FTac FB20",
+              "18” Bruen Guerilla",
+              "24.4” Bruen S-620",
+              "508MM Rear Guard",
+              "16.5” Bruen S901",
+            ],
+          },
+          {
+            name: "Magazine",
+            items: ["Single Tap Mod", "42 Round Mag"],
+          },
+          {
+            name: "Stock",
+            items: ["Bruen MX9 Stock", "Bruen HCR 56 Stock"],
+          },
+          {
+            name: "Rear Grip",
+            items: ["Bruen G305 Grip Wrap", "STIP-40 Grip", "	Bruen Q900 Grip"],
+          },
+          {
+            name: "Muzzle",
+            items: [
+              "Corvus Slash Gen. 2",
+              "Dark KX30",
+              "VLK Koloss Flash Hider",
+              "Broadhead-3DP",
+              "Silentfire XG6",
+              "Echoline GS-X",
+              "Harbinger D20",
+              "Echoless-80",
+              "FSS Covert V",
+              "Gauge-9 Mono",
+              "RF Crown 50",
+              "Komodo Heavy",
+              "XTen Ported 290",
+              "Cronen OP44",
+              "FTac Castle Comp",
+              "XTen Havoc 90",
+              "SAKIN Tread-40",
+              "C400 Door Knocker",
+            ],
+          },
+          {
+            name: "Underbarrel",
+            items: [
+              "Edge-47 Grip",
+              "Demo Firm Grip",
+              "XTEN Gravedigger",
+              "FTac Ripper 56",
+              "Demo Cleanshot 40",
+              "Demo Imp-44 Grip",
+              "FTac Tiger Grip",
+              "FSS Sharkfin 90",
+              "Agent Grip",
+              "Bruen Sync Shot Grip",
+              "XTEN Drop Grip",
+              "Phase-3 Grip",
+              "Merc Foregrip",
+              "Lockgrip Precision-40",
+              "Hex-40 Grip",
+              "Schlager Tango",
+              "VX Pineapple",
+              "OP-X9 Foregrip",
+              "Operator Foregrip",
+              "TV Wrecker Grip",
+              "Bruen Tilt Grip",
+              "Cronen Grooveshot Grip",
+              "Bruen Warrior Grip",
+              "Bipod V9 Grip",
+              "TL40 Fire Drake",
+            ],
+          },
+          {
+            name: "Ammunition",
+            items: [
+              "5.56 Frangible",
+              "	5.56 Armor Piercing",
+              "5.56 Overpressured +P",
+              "5.56 High Velocity",
+            ],
+          },
+          {
+            name: "Laser",
+            items: [
+              "1MW Quick Fire Laser",
+              "Accu-Shot 5MW Laser",
+              "VLK LZR 7MW",
+              "Schlager Ulo-66 Laser",
+              "STOVL Tac Laser",
+              "Hipshot L20",
+              "Point-G3P 04",
+              "FJX Ultrabeam XR",
+              "EXF Solarflare",
+            ],
+          },
+          {
+            name: "Optic",
+            items: [
+              "Slimline Pro",
+              "SZ Mini",
+              "Cronen Mini Red Dot",
+              "Cronen Mini Pro",
+              "SZ Sigma-IV Optic",
+              "SZ Minitac-40",
+              "XRK On-Point Optic",
+              "DF105 Reflex Sight",
+              "Monocle CT90",
+              "Corvus SOL-76",
+              "SZ Recharge-DX",
+              "SZ SRO-7",
+              "Corio RE-X Pro",
+              "Corio Enforcer Optic",
+              "SZ Lonewolf Optic",
+              "Kazan-Holo",
+              "Corvus Downrange-00",
+              "SZ Holotherm",
+              "XTEN Angel-40",
+              "VLK 4.0 Optic",
+              "Schlager 4X",
+              "Forge Tac Delta 4",
+              "Cronen Zero-P Optic",
+              "SZ Bullseye Optic",
+              "SZ Aggressor-IR Optic",
+              "Schlager Night View",
+              "VX350 Thermal Optic",
+              "Teplo-OP3 Scope",
+              "DR582 Hybrid Sight",
+              "Hybrid Firepoint",
+              "SZ Vortex-90",
+              "BPZ40 Hybrid",
+              "Angel-40 4.8x",
+              "Thermo-Optic X9",
+              "Teplo Clear Shot",
+              "FTac Charlie7",
+              "HMW-20 Optic",
+              "Luca Bandera Scope",
+              "Drexsom Prime-90",
+              "ARES Clear Shot",
+              "Luca Canis 4x Optic",
+            ],
+          },
+          {
+            name: "Comb",
+            items: [
+              "Schlager TTF3 Riser",
+              "Bruen TS-30 Comb",
+              "FTAC C11 Riser",
+            ],
+          },
+        ],
       },
       chimera: {
         name: "Chimera",
-        attachments: [],
+        attachments: [
+          {
+            name: "Barrel",
+            items: [],
+          },
+          {
+            name: "Magazine",
+            items: [],
+          },
+          {
+            name: "Stock",
+            items: [],
+          },
+          {
+            name: "Rear Grip",
+            items: [],
+          },
+          {
+            name: "Muzzle",
+            items: [],
+          },
+          {
+            name: "Underbarrel",
+            items: [],
+          },
+          {
+            name: "Ammunition",
+            items: [],
+          },
+          {
+            name: "Laser",
+            items: [],
+          },
+          {
+            name: "Optic",
+            items: [],
+          },
+        ],
       },
       m13: {
         name: "M13B",
-        attachments: [],
+        attachments: [
+          {
+            name: "Barrel",
+            items: [],
+          },
+          {
+            name: "Magazine",
+            items: [],
+          },
+          {
+            name: "Stock",
+            items: [],
+          },
+          {
+            name: "Rear Grip",
+            items: [],
+          },
+          {
+            name: "Muzzle",
+            items: [],
+          },
+          {
+            name: "Underbarrel",
+            items: [],
+          },
+          {
+            name: "Ammunition",
+            items: [],
+          },
+          {
+            name: "Laser",
+            items: [],
+          },
+          {
+            name: "Optic",
+            items: [],
+          },
+        ],
       },
     },
     submachineGuns: {
       lachmannSub: {
         name: "Lachmann Sub",
-        attachments: [],
+        attachments: [
+          {
+            name: "Barrel",
+            items: [],
+          },
+          {
+            name: "Magazine",
+            items: [],
+          },
+          {
+            name: "Stock",
+            items: [],
+          },
+          {
+            name: "Rear Grip",
+            items: [],
+          },
+          {
+            name: "Muzzle",
+            items: [],
+          },
+          {
+            name: "Underbarrel",
+            items: [],
+          },
+          {
+            name: "Ammunition",
+            items: [],
+          },
+          {
+            name: "Laser",
+            items: [],
+          },
+          {
+            name: "Optic",
+            items: [],
+          },
+        ],
       },
       fssHurricane: {
         name: "FSS Hurricane",
-        attachments: [],
+        attachments: [
+          {
+            name: "Barrel",
+            items: [],
+          },
+          {
+            name: "Magazine",
+            items: [],
+          },
+          {
+            name: "Stock",
+            items: [],
+          },
+          {
+            name: "Rear Grip",
+            items: [],
+          },
+          {
+            name: "Muzzle",
+            items: [],
+          },
+          {
+            name: "Underbarrel",
+            items: [],
+          },
+          {
+            name: "Ammunition",
+            items: [],
+          },
+          {
+            name: "Laser",
+            items: [],
+          },
+          {
+            name: "Optic",
+            items: [],
+          },
+        ],
       },
       fennec45: {
         name: "Fennec 45",
-        attachments: [],
+        attachments: [
+          {
+            name: "Barrel",
+            items: [],
+          },
+          {
+            name: "Magazine",
+            items: [],
+          },
+          {
+            name: "Stock",
+            items: [],
+          },
+          {
+            name: "Rear Grip",
+            items: [],
+          },
+          {
+            name: "Muzzle",
+            items: [],
+          },
+          {
+            name: "Underbarrel",
+            items: [],
+          },
+          {
+            name: "Ammunition",
+            items: [],
+          },
+          {
+            name: "Laser",
+            items: [],
+          },
+          {
+            name: "Optic",
+            items: [],
+          },
+        ],
       },
       vel46: {
         name: "VEL 46",
-        attachments: [],
+        attachments: [
+          {
+            name: "Barrel",
+            items: [],
+          },
+          {
+            name: "Magazine",
+            items: [],
+          },
+          {
+            name: "Stock",
+            items: [],
+          },
+          {
+            name: "Rear Grip",
+            items: [],
+          },
+          {
+            name: "Muzzle",
+            items: [],
+          },
+          {
+            name: "Underbarrel",
+            items: [],
+          },
+          {
+            name: "Ammunition",
+            items: [],
+          },
+          {
+            name: "Laser",
+            items: [],
+          },
+          {
+            name: "Optic",
+            items: [],
+          },
+        ],
       },
       mx9: {
         name: "MX9",
-        attachments: [],
+        attachments: [
+          {
+            name: "Barrel",
+            items: [],
+          },
+          {
+            name: "Magazine",
+            items: [],
+          },
+          {
+            name: "Stock",
+            items: [],
+          },
+          {
+            name: "Rear Grip",
+            items: [],
+          },
+          {
+            name: "Muzzle",
+            items: [],
+          },
+          {
+            name: "Underbarrel",
+            items: [],
+          },
+          {
+            name: "Ammunition",
+            items: [],
+          },
+          {
+            name: "Laser",
+            items: [],
+          },
+          {
+            name: "Optic",
+            items: [],
+          },
+        ],
       },
       pdsw528: {
         name: "PDSW 528",
-        attachments: [],
+        attachments: [
+          {
+            name: "Barrel",
+            items: [],
+          },
+          {
+            name: "Magazine",
+            items: [],
+          },
+          {
+            name: "Stock",
+            items: [],
+          },
+          {
+            name: "Rear Grip",
+            items: [],
+          },
+          {
+            name: "Muzzle",
+            items: [],
+          },
+          {
+            name: "Underbarrel",
+            items: [],
+          },
+          {
+            name: "Ammunition",
+            items: [],
+          },
+          {
+            name: "Laser",
+            items: [],
+          },
+          {
+            name: "Optic",
+            items: [],
+          },
+        ],
       },
       minibak: {
         name: "Minibak",
-        attachments: [],
+        attachments: [
+          {
+            name: "Barrel",
+            items: [],
+          },
+          {
+            name: "Magazine",
+            items: [],
+          },
+          {
+            name: "Stock",
+            items: [],
+          },
+          {
+            name: "Rear Grip",
+            items: [],
+          },
+          {
+            name: "Muzzle",
+            items: [],
+          },
+          {
+            name: "Underbarrel",
+            items: [],
+          },
+          {
+            name: "Ammunition",
+            items: [],
+          },
+          {
+            name: "Laser",
+            items: [],
+          },
+          {
+            name: "Optic",
+            items: [],
+          },
+        ],
       },
       basp: {
         name: "BAS-P",
-        attachments: [],
+        attachments: [
+          {
+            name: "Barrel",
+            items: [],
+          },
+          {
+            name: "Magazine",
+            items: [],
+          },
+          {
+            name: "Stock",
+            items: [],
+          },
+          {
+            name: "Rear Grip",
+            items: [],
+          },
+          {
+            name: "Muzzle",
+            items: [],
+          },
+          {
+            name: "Underbarrel",
+            items: [],
+          },
+          {
+            name: "Ammunition",
+            items: [],
+          },
+          {
+            name: "Laser",
+            items: [],
+          },
+          {
+            name: "Optic",
+            items: [],
+          },
+        ],
       },
       vasnek9k: {
         name: "Vasnev-9K",
-        attachments: [],
+        attachments: [
+          {
+            name: "Barrel",
+            items: [],
+          },
+          {
+            name: "Magazine",
+            items: [],
+          },
+          {
+            name: "Stock",
+            items: [],
+          },
+          {
+            name: "Rear Grip",
+            items: [],
+          },
+          {
+            name: "Muzzle",
+            items: [],
+          },
+          {
+            name: "Underbarrel",
+            items: [],
+          },
+          {
+            name: "Ammunition",
+            items: [],
+          },
+          {
+            name: "Laser",
+            items: [],
+          },
+          {
+            name: "Optic",
+            items: [],
+          },
+        ],
       },
     },
     lightMachineGuns: {
       icarus556: {
         name: "556 Icarus",
-        attachments: [],
+        attachments: [
+          {
+            name: "Barrel",
+            items: [],
+          },
+          {
+            name: "Magazine",
+            items: [],
+          },
+          {
+            name: "Stock",
+            items: [],
+          },
+          {
+            name: "Rear Grip",
+            items: [],
+          },
+          {
+            name: "Muzzle",
+            items: [],
+          },
+          {
+            name: "Underbarrel",
+            items: [],
+          },
+          {
+            name: "Ammunition",
+            items: [],
+          },
+          {
+            name: "Laser",
+            items: [],
+          },
+          {
+            name: "Optic",
+            items: [],
+          },
+        ],
       },
       rapph: {
         name: "RAPP H",
-        attachments: [],
+        attachments: [
+          {
+            name: "Barrel",
+            items: [],
+          },
+          {
+            name: "Magazine",
+            items: [],
+          },
+          {
+            name: "Stock",
+            items: [],
+          },
+          {
+            name: "Rear Grip",
+            items: [],
+          },
+          {
+            name: "Muzzle",
+            items: [],
+          },
+          {
+            name: "Underbarrel",
+            items: [],
+          },
+          {
+            name: "Ammunition",
+            items: [],
+          },
+          {
+            name: "Laser",
+            items: [],
+          },
+          {
+            name: "Optic",
+            items: [],
+          },
+        ],
       },
       sakinmg38: {
         name: "SAKIN MG38",
-        attachments: [],
+        attachments: [
+          {
+            name: "Barrel",
+            items: [],
+          },
+          {
+            name: "Magazine",
+            items: [],
+          },
+          {
+            name: "Stock",
+            items: [],
+          },
+          {
+            name: "Rear Grip",
+            items: [],
+          },
+          {
+            name: "Muzzle",
+            items: [],
+          },
+          {
+            name: "Underbarrel",
+            items: [],
+          },
+          {
+            name: "Ammunition",
+            items: [],
+          },
+          {
+            name: "Laser",
+            items: [],
+          },
+          {
+            name: "Optic",
+            items: [],
+          },
+        ],
       },
       rpk: {
         name: "RPK",
-        attachments: [],
+        attachments: [
+          {
+            name: "Barrel",
+            items: [],
+          },
+          {
+            name: "Magazine",
+            items: [],
+          },
+          {
+            name: "Stock",
+            items: [],
+          },
+          {
+            name: "Rear Grip",
+            items: [],
+          },
+          {
+            name: "Muzzle",
+            items: [],
+          },
+          {
+            name: "Underbarrel",
+            items: [],
+          },
+          {
+            name: "Ammunition",
+            items: [],
+          },
+          {
+            name: "Laser",
+            items: [],
+          },
+          {
+            name: "Optic",
+            items: [],
+          },
+        ],
       },
       hcr56: {
         name: "HCR 56",
-        attachments: [],
+        attachments: [
+          {
+            name: "Barrel",
+            items: [],
+          },
+          {
+            name: "Magazine",
+            items: [],
+          },
+          {
+            name: "Stock",
+            items: [],
+          },
+          {
+            name: "Rear Grip",
+            items: [],
+          },
+          {
+            name: "Muzzle",
+            items: [],
+          },
+          {
+            name: "Underbarrel",
+            items: [],
+          },
+          {
+            name: "Ammunition",
+            items: [],
+          },
+          {
+            name: "Laser",
+            items: [],
+          },
+          {
+            name: "Optic",
+            items: [],
+          },
+        ],
       },
       raalmg: {
         name: "RAAL MG",
-        attachments: [],
+        attachments: [
+          {
+            name: "Barrel",
+            items: [],
+          },
+          {
+            name: "Magazine",
+            items: [],
+          },
+          {
+            name: "Stock",
+            items: [],
+          },
+          {
+            name: "Rear Grip",
+            items: [],
+          },
+          {
+            name: "Muzzle",
+            items: [],
+          },
+          {
+            name: "Underbarrel",
+            items: [],
+          },
+          {
+            name: "Ammunition",
+            items: [],
+          },
+          {
+            name: "Laser",
+            items: [],
+          },
+          {
+            name: "Optic",
+            items: [],
+          },
+        ],
       },
     },
     shotguns: {
       expedite12: {
         name: "Expedite 12",
-        attachments: [],
+        attachments: [
+          {
+            name: "Barrel",
+            items: [],
+          },
+          {
+            name: "Magazine",
+            items: [],
+          },
+          {
+            name: "Stock",
+            items: [],
+          },
+          {
+            name: "Rear Grip",
+            items: [],
+          },
+          {
+            name: "Muzzle",
+            items: [],
+          },
+          {
+            name: "Underbarrel",
+            items: [],
+          },
+          {
+            name: "Ammunition",
+            items: [],
+          },
+          {
+            name: "Laser",
+            items: [],
+          },
+          {
+            name: "Optic",
+            items: [],
+          },
+        ],
       },
       lockwood300: {
         name: "Lockwood 300",
-        attachments: [],
+        attachments: [
+          {
+            name: "Barrel",
+            items: [],
+          },
+          {
+            name: "Magazine",
+            items: [],
+          },
+          {
+            name: "Stock",
+            items: [],
+          },
+          {
+            name: "Rear Grip",
+            items: [],
+          },
+          {
+            name: "Muzzle",
+            items: [],
+          },
+          {
+            name: "Underbarrel",
+            items: [],
+          },
+          {
+            name: "Ammunition",
+            items: [],
+          },
+          {
+            name: "Laser",
+            items: [],
+          },
+          {
+            name: "Optic",
+            items: [],
+          },
+        ],
       },
       bryson800: {
         name: "Bryson 800",
-        attachments: [],
+        attachments: [
+          {
+            name: "Barrel",
+            items: [],
+          },
+          {
+            name: "Magazine",
+            items: [],
+          },
+          {
+            name: "Stock",
+            items: [],
+          },
+          {
+            name: "Rear Grip",
+            items: [],
+          },
+          {
+            name: "Muzzle",
+            items: [],
+          },
+          {
+            name: "Underbarrel",
+            items: [],
+          },
+          {
+            name: "Ammunition",
+            items: [],
+          },
+          {
+            name: "Laser",
+            items: [],
+          },
+          {
+            name: "Optic",
+            items: [],
+          },
+        ],
       },
       bryson890: {
         name: "Bryson 890",
-        attachments: [],
+        attachments: [
+          {
+            name: "Barrel",
+            items: [],
+          },
+          {
+            name: "Magazine",
+            items: [],
+          },
+          {
+            name: "Stock",
+            items: [],
+          },
+          {
+            name: "Rear Grip",
+            items: [],
+          },
+          {
+            name: "Muzzle",
+            items: [],
+          },
+          {
+            name: "Underbarrel",
+            items: [],
+          },
+          {
+            name: "Ammunition",
+            items: [],
+          },
+          {
+            name: "Laser",
+            items: [],
+          },
+          {
+            name: "Optic",
+            items: [],
+          },
+        ],
       },
     },
     marksmanRifles: {
       lms: {
         name: "LM-S",
-        attachments: [],
+        attachments: [
+          {
+            name: "Barrel",
+            items: [],
+          },
+          {
+            name: "Magazine",
+            items: [],
+          },
+          {
+            name: "Stock",
+            items: [],
+          },
+          {
+            name: "Rear Grip",
+            items: [],
+          },
+          {
+            name: "Muzzle",
+            items: [],
+          },
+          {
+            name: "Underbarrel",
+            items: [],
+          },
+          {
+            name: "Ammunition",
+            items: [],
+          },
+          {
+            name: "Laser",
+            items: [],
+          },
+          {
+            name: "Optic",
+            items: [],
+          },
+        ],
       },
       lockwoodmk2: {
         name: "Lockwood Mk2",
-        attachments: [],
+        attachments: [
+          {
+            name: "Barrel",
+            items: [],
+          },
+          {
+            name: "Magazine",
+            items: [],
+          },
+          {
+            name: "Stock",
+            items: [],
+          },
+          {
+            name: "Rear Grip",
+            items: [],
+          },
+          {
+            name: "Muzzle",
+            items: [],
+          },
+          {
+            name: "Underbarrel",
+            items: [],
+          },
+          {
+            name: "Ammunition",
+            items: [],
+          },
+          {
+            name: "Laser",
+            items: [],
+          },
+          {
+            name: "Optic",
+            items: [],
+          },
+        ],
       },
       ebr14: {
         name: "EBR-14",
-        attachments: [],
+        attachments: [
+          {
+            name: "Barrel",
+            items: [],
+          },
+          {
+            name: "Magazine",
+            items: [],
+          },
+          {
+            name: "Stock",
+            items: [],
+          },
+          {
+            name: "Rear Grip",
+            items: [],
+          },
+          {
+            name: "Muzzle",
+            items: [],
+          },
+          {
+            name: "Underbarrel",
+            items: [],
+          },
+          {
+            name: "Ammunition",
+            items: [],
+          },
+          {
+            name: "Laser",
+            items: [],
+          },
+          {
+            name: "Optic",
+            items: [],
+          },
+        ],
       },
       spr208: {
         name: "SP-R 208",
-        attachments: [],
+        attachments: [
+          {
+            name: "Barrel",
+            items: [],
+          },
+          {
+            name: "Magazine",
+            items: [],
+          },
+          {
+            name: "Stock",
+            items: [],
+          },
+          {
+            name: "Rear Grip",
+            items: [],
+          },
+          {
+            name: "Muzzle",
+            items: [],
+          },
+          {
+            name: "Underbarrel",
+            items: [],
+          },
+          {
+            name: "Ammunition",
+            items: [],
+          },
+          {
+            name: "Laser",
+            items: [],
+          },
+          {
+            name: "Optic",
+            items: [],
+          },
+        ],
       },
       sab50: {
         name: "SA-B 50",
-        attachments: [],
+        attachments: [
+          {
+            name: "Barrel",
+            items: [],
+          },
+          {
+            name: "Magazine",
+            items: [],
+          },
+          {
+            name: "Stock",
+            items: [],
+          },
+          {
+            name: "Rear Grip",
+            items: [],
+          },
+          {
+            name: "Muzzle",
+            items: [],
+          },
+          {
+            name: "Underbarrel",
+            items: [],
+          },
+          {
+            name: "Ammunition",
+            items: [],
+          },
+          {
+            name: "Laser",
+            items: [],
+          },
+          {
+            name: "Optic",
+            items: [],
+          },
+        ],
       },
       taqm: {
         name: "TAQ-M",
-        attachments: [],
+        attachments: [
+          {
+            name: "Barrel",
+            items: [],
+          },
+          {
+            name: "Magazine",
+            items: [],
+          },
+          {
+            name: "Stock",
+            items: [],
+          },
+          {
+            name: "Rear Grip",
+            items: [],
+          },
+          {
+            name: "Muzzle",
+            items: [],
+          },
+          {
+            name: "Underbarrel",
+            items: [],
+          },
+          {
+            name: "Ammunition",
+            items: [],
+          },
+          {
+            name: "Laser",
+            items: [],
+          },
+          {
+            name: "Optic",
+            items: [],
+          },
+        ],
       },
     },
     battleRifles: {
       ftacRecon: {
         name: "FTAC Recon",
-        attachments: [],
+        attachments: [
+          {
+            name: "Barrel",
+            items: [],
+          },
+          {
+            name: "Magazine",
+            items: [],
+          },
+          {
+            name: "Stock",
+            items: [],
+          },
+          {
+            name: "Rear Grip",
+            items: [],
+          },
+          {
+            name: "Muzzle",
+            items: [],
+          },
+          {
+            name: "Underbarrel",
+            items: [],
+          },
+          {
+            name: "Ammunition",
+            items: [],
+          },
+          {
+            name: "Laser",
+            items: [],
+          },
+          {
+            name: "Optic",
+            items: [],
+          },
+        ],
       },
       lachmann762: {
         name: "Lachmann-762",
-        attachments: [],
+        attachments: [
+          {
+            name: "Barrel",
+            items: [],
+          },
+          {
+            name: "Magazine",
+            items: [],
+          },
+          {
+            name: "Stock",
+            items: [],
+          },
+          {
+            name: "Rear Grip",
+            items: [],
+          },
+          {
+            name: "Muzzle",
+            items: [],
+          },
+          {
+            name: "Underbarrel",
+            items: [],
+          },
+          {
+            name: "Ammunition",
+            items: [],
+          },
+          {
+            name: "Laser",
+            items: [],
+          },
+          {
+            name: "Optic",
+            items: [],
+          },
+        ],
       },
       so14: {
         name: "SO-14",
-        attachments: [],
+        attachments: [
+          {
+            name: "Barrel",
+            items: [],
+          },
+          {
+            name: "Magazine",
+            items: [],
+          },
+          {
+            name: "Stock",
+            items: [],
+          },
+          {
+            name: "Rear Grip",
+            items: [],
+          },
+          {
+            name: "Muzzle",
+            items: [],
+          },
+          {
+            name: "Underbarrel",
+            items: [],
+          },
+          {
+            name: "Ammunition",
+            items: [],
+          },
+          {
+            name: "Laser",
+            items: [],
+          },
+          {
+            name: "Optic",
+            items: [],
+          },
+        ],
       },
       taqv: {
         name: "TAQ-V",
-        attachments: [],
+        attachments: [
+          {
+            name: "Barrel",
+            items: [],
+          },
+          {
+            name: "Magazine",
+            items: [],
+          },
+          {
+            name: "Stock",
+            items: [],
+          },
+          {
+            name: "Rear Grip",
+            items: [],
+          },
+          {
+            name: "Muzzle",
+            items: [],
+          },
+          {
+            name: "Underbarrel",
+            items: [],
+          },
+          {
+            name: "Ammunition",
+            items: [],
+          },
+          {
+            name: "Laser",
+            items: [],
+          },
+          {
+            name: "Optic",
+            items: [],
+          },
+        ],
       },
     },
     sniperRifles: {
       signal50: {
         name: "Signal 50",
-        attachments: [],
+        attachments: [
+          {
+            name: "Barrel",
+            items: [],
+          },
+          {
+            name: "Magazine",
+            items: [],
+          },
+          {
+            name: "Stock",
+            items: [],
+          },
+          {
+            name: "Rear Grip",
+            items: [],
+          },
+          {
+            name: "Muzzle",
+            items: [],
+          },
+          {
+            name: "Underbarrel",
+            items: [],
+          },
+          {
+            name: "Ammunition",
+            items: [],
+          },
+          {
+            name: "Laser",
+            items: [],
+          },
+          {
+            name: "Optic",
+            items: [],
+          },
+        ],
       },
       victusxmr: {
         name: "Victus XMR",
-        attachments: [],
+        attachments: [
+          {
+            name: "Barrel",
+            items: [],
+          },
+          {
+            name: "Magazine",
+            items: [],
+          },
+          {
+            name: "Stock",
+            items: [],
+          },
+          {
+            name: "Rear Grip",
+            items: [],
+          },
+          {
+            name: "Muzzle",
+            items: [],
+          },
+          {
+            name: "Underbarrel",
+            items: [],
+          },
+          {
+            name: "Ammunition",
+            items: [],
+          },
+          {
+            name: "Laser",
+            items: [],
+          },
+          {
+            name: "Optic",
+            items: [],
+          },
+        ],
       },
       mcpr300: {
         name: "MCPR-300",
-        attachments: [],
+        attachments: [
+          {
+            name: "Barrel",
+            items: [],
+          },
+          {
+            name: "Magazine",
+            items: [],
+          },
+          {
+            name: "Stock",
+            items: [],
+          },
+          {
+            name: "Rear Grip",
+            items: [],
+          },
+          {
+            name: "Muzzle",
+            items: [],
+          },
+          {
+            name: "Underbarrel",
+            items: [],
+          },
+          {
+            name: "Ammunition",
+            items: [],
+          },
+          {
+            name: "Laser",
+            items: [],
+          },
+          {
+            name: "Optic",
+            items: [],
+          },
+        ],
       },
       lab330: {
         name: "LA-B 330",
-        attachments: [],
+        attachments: [
+          {
+            name: "Barrel",
+            items: [],
+          },
+          {
+            name: "Magazine",
+            items: [],
+          },
+          {
+            name: "Stock",
+            items: [],
+          },
+          {
+            name: "Rear Grip",
+            items: [],
+          },
+          {
+            name: "Muzzle",
+            items: [],
+          },
+          {
+            name: "Underbarrel",
+            items: [],
+          },
+          {
+            name: "Ammunition",
+            items: [],
+          },
+          {
+            name: "Laser",
+            items: [],
+          },
+          {
+            name: "Optic",
+            items: [],
+          },
+        ],
       },
       spx80: {
         name: "SP-X 80",
-        attachments: [],
+        attachments: [
+          {
+            name: "Barrel",
+            items: [],
+          },
+          {
+            name: "Magazine",
+            items: [],
+          },
+          {
+            name: "Stock",
+            items: [],
+          },
+          {
+            name: "Rear Grip",
+            items: [],
+          },
+          {
+            name: "Muzzle",
+            items: [],
+          },
+          {
+            name: "Underbarrel",
+            items: [],
+          },
+          {
+            name: "Ammunition",
+            items: [],
+          },
+          {
+            name: "Laser",
+            items: [],
+          },
+          {
+            name: "Optic",
+            items: [],
+          },
+        ],
       },
     },
     melee: {
@@ -280,41 +2773,374 @@ export const allWeapons = {
     handguns: {
       x12: {
         name: "X12",
-        attachments: [],
+        attachments: [
+          {
+            name: "Barrel",
+            items: [],
+          },
+          {
+            name: "Magazine",
+            items: [],
+          },
+          {
+            name: "Stock",
+            items: [],
+          },
+          {
+            name: "Rear Grip",
+            items: [],
+          },
+          {
+            name: "Muzzle",
+            items: [],
+          },
+          {
+            name: "Underbarrel",
+            items: [],
+          },
+          {
+            name: "Ammunition",
+            items: [],
+          },
+          {
+            name: "Laser",
+            items: [],
+          },
+          {
+            name: "Optic",
+            items: [],
+          },
+        ],
       },
       x13: {
         name: "X13 Auto",
-        attachments: [],
+        attachments: [
+          {
+            name: "Barrel",
+            items: [],
+          },
+          {
+            name: "Magazine",
+            items: [],
+          },
+          {
+            name: "Stock",
+            items: [],
+          },
+          {
+            name: "Rear Grip",
+            items: [],
+          },
+          {
+            name: "Muzzle",
+            items: [],
+          },
+          {
+            name: "Underbarrel",
+            items: [],
+          },
+          {
+            name: "Ammunition",
+            items: [],
+          },
+          {
+            name: "Laser",
+            items: [],
+          },
+          {
+            name: "Optic",
+            items: [],
+          },
+        ],
       },
       p890: {
         name: "P890",
-        attachments: [],
+        attachments: [
+          {
+            name: "Barrel",
+            items: [],
+          },
+          {
+            name: "Magazine",
+            items: [],
+          },
+          {
+            name: "Stock",
+            items: [],
+          },
+          {
+            name: "Rear Grip",
+            items: [],
+          },
+          {
+            name: "Muzzle",
+            items: [],
+          },
+          {
+            name: "Underbarrel",
+            items: [],
+          },
+          {
+            name: "Ammunition",
+            items: [],
+          },
+          {
+            name: "Laser",
+            items: [],
+          },
+          {
+            name: "Optic",
+            items: [],
+          },
+        ],
       },
       deagle: {
         name: ".50 GS",
-        attachments: [],
+        attachments: [
+          {
+            name: "Barrel",
+            items: [],
+          },
+          {
+            name: "Magazine",
+            items: [],
+          },
+          {
+            name: "Stock",
+            items: [],
+          },
+          {
+            name: "Rear Grip",
+            items: [],
+          },
+          {
+            name: "Muzzle",
+            items: [],
+          },
+          {
+            name: "Underbarrel",
+            items: [],
+          },
+          {
+            name: "Ammunition",
+            items: [],
+          },
+          {
+            name: "Laser",
+            items: [],
+          },
+          {
+            name: "Optic",
+            items: [],
+          },
+        ],
       },
       basilisk: {
         name: "Basilisk",
-        attachments: [],
+        attachments: [
+          {
+            name: "Barrel",
+            items: [],
+          },
+          {
+            name: "Magazine",
+            items: [],
+          },
+          {
+            name: "Stock",
+            items: [],
+          },
+          {
+            name: "Rear Grip",
+            items: [],
+          },
+          {
+            name: "Muzzle",
+            items: [],
+          },
+          {
+            name: "Underbarrel",
+            items: [],
+          },
+          {
+            name: "Ammunition",
+            items: [],
+          },
+          {
+            name: "Laser",
+            items: [],
+          },
+          {
+            name: "Optic",
+            items: [],
+          },
+        ],
       },
     },
     launchers: {
       jokr: {
         name: "JOKR",
-        attachments: [],
+        attachments: [
+          {
+            name: "Barrel",
+            items: [],
+          },
+          {
+            name: "Magazine",
+            items: [],
+          },
+          {
+            name: "Stock",
+            items: [],
+          },
+          {
+            name: "Rear Grip",
+            items: [],
+          },
+          {
+            name: "Muzzle",
+            items: [],
+          },
+          {
+            name: "Underbarrel",
+            items: [],
+          },
+          {
+            name: "Ammunition",
+            items: [],
+          },
+          {
+            name: "Laser",
+            items: [],
+          },
+          {
+            name: "Optic",
+            items: [],
+          },
+        ],
       },
       pila: {
         name: "PILA",
-        attachments: [],
+        attachments: [
+          {
+            name: "Barrel",
+            items: [],
+          },
+          {
+            name: "Magazine",
+            items: [],
+          },
+          {
+            name: "Stock",
+            items: [],
+          },
+          {
+            name: "Rear Grip",
+            items: [],
+          },
+          {
+            name: "Muzzle",
+            items: [],
+          },
+          {
+            name: "Underbarrel",
+            items: [],
+          },
+          {
+            name: "Ammunition",
+            items: [],
+          },
+          {
+            name: "Laser",
+            items: [],
+          },
+          {
+            name: "Optic",
+            items: [],
+          },
+        ],
       },
       prg7: {
         name: "RPG-7",
-        attachments: [],
+        attachments: [
+          {
+            name: "Barrel",
+            items: [],
+          },
+          {
+            name: "Magazine",
+            items: [],
+          },
+          {
+            name: "Stock",
+            items: [],
+          },
+          {
+            name: "Rear Grip",
+            items: [],
+          },
+          {
+            name: "Muzzle",
+            items: [],
+          },
+          {
+            name: "Underbarrel",
+            items: [],
+          },
+          {
+            name: "Ammunition",
+            items: [],
+          },
+          {
+            name: "Laser",
+            items: [],
+          },
+          {
+            name: "Optic",
+            items: [],
+          },
+        ],
       },
       strelap: {
         name: "STRELA-P",
-        attachments: [],
+        attachments: [
+          {
+            name: "Barrel",
+            items: [],
+          },
+          {
+            name: "Magazine",
+            items: [],
+          },
+          {
+            name: "Stock",
+            items: [],
+          },
+          {
+            name: "Rear Grip",
+            items: [],
+          },
+          {
+            name: "Muzzle",
+            items: [],
+          },
+          {
+            name: "Underbarrel",
+            items: [],
+          },
+          {
+            name: "Ammunition",
+            items: [],
+          },
+          {
+            name: "Laser",
+            items: [],
+          },
+          {
+            name: "Optic",
+            items: [],
+          },
+        ],
       },
     },
     melee: {
