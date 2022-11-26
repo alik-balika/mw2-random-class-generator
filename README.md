@@ -1,3 +1,7 @@
+# MW2 Random Class Generator
+
+A MW2 2022 random class generator. Assumes you have all weapons and attachments unlocked. Future version may allow user to select which guns/attachments are available to them. Built with React.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
