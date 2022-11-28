@@ -1,5 +1,5 @@
-ARs: Chimera, M13B
-All Pistols
+ARs: Chimera
+Pistols: P890, .50 GS, Basilisk, X13 Auto
 Battle Rifles: SO-14(Double check Rear Grips)
 SMGs: FSS Hurricane (Double check Magazines), PDSW 528(Underbarrels), BAS-P (Everything)
 Marksman Rifles: LM-S, Lockwood Mk2, EBR-14, SA-B 50, TAQ-M
