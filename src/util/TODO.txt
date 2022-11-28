@@ -1,9 +1,8 @@
 ARs: Chimera
-Marksman Rifles: LM-S, Lockwood Mk2, EBR-14, SA-B 50, TAQ-M
-Snipers: Victus
 
 ”
 
+Add Blocked feature:
 X13 Auto -> All stocks and underbarrels are blocked unless the impact point barrel is chosen
             From optics "XRK On-Point Optic", "DF105 Reflex Sight", "Monocle CT90", "Corvus SOL-76", "SZ Recharge-DX", "SZ SRO-7", "Corio RE-X Pro", "Corio Enforcer Optic", "SZ Lonewolf Optic", "Kazan-Holo", "SZ Battle Optic", "Corvus Downrange-00", "SZ Holotherm", "Xten Angel-40" blocked unless impact barrel is chosen
 
@@ -11,3 +10,8 @@ SO-14 -> All rear grips blocked if Factory Stock or Model 1957 Stock is chosen
 
 PDSW 528 -> Muzzles blocked by some barrels
             Underbarrels blocked by some barrels
+
+Mk2 -> All underbarrels blocked by Lockwood Saddle Guard and Factory Guard
+
+EBR -> All Combs blocked unless the SO-90 Factory Stock is chosen
+       All Rear Grips blocked if SO-90 Factory Stock is chosen
