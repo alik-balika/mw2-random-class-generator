@@ -1610,10 +1610,6 @@ export const allWeapons = {
             items: ["FSS Cannonade 16”", "FSS-X7 Barrel"],
           },
           {
-            name: "Magazine",
-            items: [], // no magazines?
-          },
-          {
             name: "Stock",
             items: [
               "Demo Quicksilver Stock",
@@ -6846,9 +6842,9 @@ export const allPerks = {
     "Double Time",
     "Battle Hardened",
     "Scavenger",
-    "E.O.D.",
+    "Bomb Squad",
     "Tracker",
-    "Pitcher",
+    "Strong Arm",
     "Extra Tactical",
   ],
   bonus: [
@@ -6856,13 +6852,13 @@ export const allPerks = {
     "Spotter",
     "Cold-Blooded",
     "Fast Hands",
-    "Quick Fix",
+    "Hardline",
     "Focus",
   ],
   ultimate: [
     "High Alert",
     "Ghost",
-    "Hardline",
+    "Quick Fix",
     "Overclock",
     "Survivor",
     "Birds' Eye",
