@@ -1,6 +1,8 @@
 ARs: Chimera, M13B
 All Pistols
 Battle Rifles: SO-14(Double check Rear Grips)
-SMGs: FSS Hurricane (Double check Magazines), Vel 46 (Double Check Receivers), MX9(Underbarrels), PDSW 528(Underbarrels), BAS-P (Everything)
-All Marksman Rifles
+SMGs: FSS Hurricane (Double check Magazines), PDSW 528(Underbarrels), BAS-P (Everything)
+Marksman Rifles: LM-S, Lockwood Mk2, EBR-14, SA-B 50, TAQ-M
 Snipers: Victus
+
+”
