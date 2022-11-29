@@ -6,3 +6,8 @@
     font-family: 'Modern Warfare';
     src: url("util/mw2-font.ttf")
 }
+
+body {
+    background: black;
+    color: white;
+}

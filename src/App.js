@@ -1,12 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
+import { allWeapons } from "./util/data";
 import {
-  allWeapons,
-  allPerks,
-  allTacticals,
-  allLethals,
-  allFieldUpgrades,
-  allKillstreaks,
-} from "./util/data";
+  randomizePerks,
+  randomizeFieldUpgrades,
+  randomizeLethal,
+  randomizeTactical,
+  randomizeKillStreaks,
+  randomizeWeapon,
+} from "./util/randomizer";
 
 function App() {
   const [primaryWeapon, setPrimaryWeapon] = useState("");
@@ -21,154 +22,28 @@ function App() {
 
   const randomizeClass = () => {
     const perks = randomizePerks();
-    randomizeTactical();
-    randomizeLethal();
-    randomizeFieldUpgrades();
-    randomizeKillStreaks();
+    setPerks(perks);
+    setTactical(randomizeTactical());
+    setLethal(randomizeLethal());
+    setFieldUpgrades(randomizeFieldUpgrades());
+    setKillStreaks(randomizeKillStreaks());
 
     const copy = JSON.parse(JSON.stringify(allWeapons));
-    console.log(perks);
-    randomizeWeapon(copy.primary, true);
+
+    let randomWeaponAndAttachments = randomizeWeapon(copy.primary);
+    setPrimaryWeapon(randomWeaponAndAttachments[0]);
+    setPrimaryAttachments(randomWeaponAndAttachments[1]);
+
+    let secondaryWeaponClass = null;
     if (perks.includes("Overkill")) {
-      console.log("Overkill included");
-      randomizeWeapon(copy.primary, false);
+      secondaryWeaponClass = copy.primary;
     } else {
-      console.log("Overkill not included");
-      randomizeWeapon(copy.secondary, false);
-    }
-    console.log(primaryWeapon);
-    console.log(secondaryWeapon);
-    console.log(copy.primary);
-  };
-
-  const randomizeWeapon = (weapons, primary) => {
-    let keys = Object.keys(weapons);
-    let randomIndex = Math.floor(Math.random() * keys.length);
-
-    const weaponClass = weapons[keys[randomIndex]];
-    keys = Object.keys(weaponClass);
-    randomIndex = Math.floor(Math.random() * keys.length);
-
-    const weapon = weaponClass[keys[randomIndex]];
-
-    delete weaponClass[keys[randomIndex]];
-
-    if (primary) {
-      setPrimaryWeapon(weapon.name);
-    } else {
-      setSecondaryWeapon(weapon.name);
+      secondaryWeaponClass = copy.secondary;
     }
 
-    randomizeAttachments(weapon, primary);
-  };
-
-  const randomizeAttachments = (weapon, primary) => {
-    const userAttachments = [];
-
-    const weaponAttachments = weapon.attachments.slice();
-
-    for (let i = 0; i < 5 && weaponAttachments.length !== 0; i++) {
-      // There is a 50% chance that an attachment can be chosen
-      const chance = Math.floor(Math.random() * 2);
-      if (chance == 0) {
-        let randomIndex = Math.floor(Math.random() * weaponAttachments.length);
-
-        const attachmentClass = weaponAttachments[randomIndex];
-
-        weaponAttachments.splice(randomIndex, 1);
-
-        randomIndex = Math.floor(Math.random() * attachmentClass.items.length);
-        const randomAttachment = attachmentClass.items[randomIndex];
-
-        userAttachments.push({
-          name: attachmentClass.name,
-          attachment: randomAttachment,
-        });
-      }
-    }
-
-    if (primary) {
-      setPrimaryAttachments(userAttachments);
-    } else {
-      setSecondaryAttachments(userAttachments);
-    }
-  };
-
-  const randomizeKillStreaks = () => {
-    const userKillstreaks = [];
-
-    const copy = allKillstreaks.slice();
-    let randomIndex = Math.floor(Math.random() * copy.length);
-    let streaks = copy[randomIndex].streaks;
-    userKillstreaks.push({
-      streak: streaks[Math.floor(Math.random() * streaks.length)],
-      kills: copy[randomIndex].kills,
-    });
-
-    copy.splice(randomIndex, 1);
-    randomIndex = Math.floor(Math.random() * copy.length);
-    streaks = copy[randomIndex].streaks;
-    userKillstreaks.push({
-      streak: streaks[Math.floor(Math.random() * streaks.length)],
-      kills: copy[randomIndex].kills,
-    });
-
-    copy.splice(randomIndex, 1);
-    randomIndex = Math.floor(Math.random() * copy.length);
-    streaks = copy[randomIndex].streaks;
-    userKillstreaks.push({
-      streak: streaks[Math.floor(Math.random() * streaks.length)],
-      kills: copy[randomIndex].kills,
-    });
-
-    userKillstreaks.sort((a, b) => a.kills - b.kills);
-
-    setKillStreaks(userKillstreaks);
-  };
-
-  const randomizeFieldUpgrades = () => {
-    const userFieldUpgrades = [];
-
-    const copy = allFieldUpgrades.slice();
-    let randomIndex = Math.floor(Math.random() * copy.length);
-    userFieldUpgrades.push(copy[randomIndex]);
-    copy.splice(randomIndex, 1);
-    randomIndex = Math.floor(Math.random() * copy.length);
-    userFieldUpgrades.push(copy[randomIndex]);
-
-    setFieldUpgrades(userFieldUpgrades);
-  };
-
-  const randomizeLethal = () => {
-    const randomIndex = Math.floor(Math.random() * allLethals.length);
-    setLethal(allLethals[randomIndex]);
-  };
-
-  const randomizeTactical = () => {
-    const randomIndex = Math.floor(Math.random() * allTacticals.length);
-    setTactical(allTacticals[randomIndex]);
-  };
-
-  const randomizePerks = () => {
-    const userPerks = [];
-
-    const basePerks = allPerks.base.slice();
-    let randomIndex = Math.floor(Math.random() * basePerks.length);
-    userPerks.push(basePerks[randomIndex]);
-    basePerks.splice(randomIndex, 1);
-    randomIndex = Math.floor(Math.random() * basePerks.length);
-    userPerks.push(basePerks[randomIndex]);
-
-    const bonusPerks = allPerks.bonus.slice();
-    randomIndex = Math.floor(Math.random() * bonusPerks.length);
-    userPerks.push(bonusPerks[randomIndex]);
-
-    const ultimatePerks = allPerks.ultimate.slice();
-    randomIndex = Math.floor(Math.random() * ultimatePerks.length);
-    userPerks.push(ultimatePerks[randomIndex]);
-
-    setPerks(userPerks);
-    return userPerks;
+    randomWeaponAndAttachments = randomizeWeapon(secondaryWeaponClass);
+    setSecondaryWeapon(randomWeaponAndAttachments[0]);
+    setSecondaryAttachments(randomWeaponAndAttachments[1]);
   };
 
   return (
@@ -232,7 +107,7 @@ function App() {
         )}
       </h1>
       <button
-        className="bg-black text-white rounded-full p-3 m-5 hover:bg-red-700"
+        className="bg-white text-black font-bold rounded-full p-3 m-5 hover:bg-red-700"
         type="button"
         onClick={() => {
           randomizeClass();
