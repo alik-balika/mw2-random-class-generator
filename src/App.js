@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 import { allWeapons } from "./util/data";
 import {
   randomizePerks,
@@ -46,8 +48,38 @@ function App() {
     setSecondaryAttachments(randomWeaponAndAttachments[1]);
   };
 
+  if (!primaryWeapon) {
+    return (
+      <div className="flex h-screen w-full font-jura">
+        <div className="flex-1 bg-hero bg-cover bg-center bg-no-repeat">
+          <Header />
+
+          <div className="flex flex-col items-center mt-10 px-20">
+            <h1 className="p-8 max-w-lg text-xl text-center text-white font-bold bg-gradient-to-b from-topGray/80 to-bottomGray/90 rounded-sm">
+              Hi! This website was created to allow players to randomly generate
+              classes for whatever reasons they wish. Press the button below to
+              generate a random class!
+            </h1>
+            <button
+              className="bg-gradient-to-b from-topGray/80 to-bottomGray/90 text-white text-xl font-bold rounded-sm p-5 mt-10 hover:bg-red-700"
+              type="button"
+              onClick={() => {
+                randomizeClass();
+              }}
+            >
+              RANDOMIZE
+            </button>
+            {/* <Footer /> */}
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div>
+      <Header />
+
       <h1>
         Primary: <span className="font-bold">{primaryWeapon}</span>
       </h1>
