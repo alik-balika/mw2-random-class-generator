@@ -98,7 +98,7 @@ function App() {
             <h1 className="text-2xl">
               <span className="font-bold">Primary:</span> {primaryWeapon}
             </h1>
-            <div className="flex flex-col space-y-3 space-x-6 justify-center mt-3 items-stretch md:flex-row md:space-y-0">
+            <div className="flex flex-col min-w-full text-center space-y-3 justify-center mt-3 items-stretch">
               {primaryAttachments.map((att) => (
                 <h2
                   key={att.name}
@@ -113,7 +113,7 @@ function App() {
             <h1 className="text-2xl">
               <span className="font-bold">Secondary:</span> {secondaryWeapon}
             </h1>
-            <div className="flex flex-col space-y-3 space-x-6 justify-center mt-3 items-stretch md:flex-row md:space-y-0">
+            <div className="flex flex-col min-w-full text-center space-y-3 justify-center mt-3 items-stretch">
               {secondaryAttachments.map((att) => (
                 <h2
                   key={att.name}
