@@ -137,6 +137,20 @@ function App() {
             </h1>
           </div>
 
+          {/* Perks */}
+          <div className="flex flex-col p-8 text-center text-white bg-gradient-to-b from-topGray/80 to-bottomGray/90 rounded-sm">
+            <h1 className="text-2xl">
+              <span className="font-bold">Perks:</span>
+            </h1>
+            <div className="flex flex-col min-w-full text-center space-y-3 justify-center mt-3 items-stretch">
+              {perks.map((perk) => (
+                <h2 key={perk} className="font-bold text-l">
+                  {perk}
+                </h2>
+              ))}
+            </div>
+          </div>
+
           {/* Field Upgrades */}
           <div className="flex flex-col p-8 text-center text-white bg-gradient-to-b from-topGray/80 to-bottomGray/90 rounded-sm">
             <h1 className="text-2xl">
