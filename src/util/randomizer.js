@@ -26,24 +26,22 @@ const randomizeAttachments = (weapon) => {
 
   const weaponAttachments = weapon.attachments.slice();
 
-  for (let i = 0; i < 5 && weaponAttachments.length !== 0; i++) {
-    // There is a 50% chance that an attachment can be chosen
-    const chance = Math.floor(Math.random() * 2);
-    if (chance === 0) {
-      let randomIndex = Math.floor(Math.random() * weaponAttachments.length);
+  const numAttachments = Math.floor(Math.random() * 6);
 
-      const attachmentClass = weaponAttachments[randomIndex];
+  for (let i = 0; i < numAttachments && weaponAttachments.length !== 0; i++) {
+    let randomIndex = Math.floor(Math.random() * weaponAttachments.length);
 
-      weaponAttachments.splice(randomIndex, 1);
+    const attachmentClass = weaponAttachments[randomIndex];
 
-      randomIndex = Math.floor(Math.random() * attachmentClass.items.length);
-      const randomAttachment = attachmentClass.items[randomIndex];
+    weaponAttachments.splice(randomIndex, 1);
 
-      userAttachments.push({
-        name: attachmentClass.name,
-        attachment: randomAttachment,
-      });
-    }
+    randomIndex = Math.floor(Math.random() * attachmentClass.items.length);
+    const randomAttachment = attachmentClass.items[randomIndex];
+
+    userAttachments.push({
+      name: attachmentClass.name,
+      attachment: randomAttachment,
+    });
   }
 
   return userAttachments;

@@ -61,7 +61,7 @@ function App() {
               generate a random class!
             </h1>
             <button
-              className="bg-gradient-to-b from-topGray/80 to-bottomGray/90 text-white text-xl font-bold rounded-sm p-5 mt-10 hover:bg-red-700"
+              className="bg-gradient-to-b from-topGray/80 to-bottomGray/90 text-white text-xl font-bold rounded-sm p-5 mt-10 hover:from-orange/80 hover:to-red-500/90"
               type="button"
               onClick={() => {
                 randomizeClass();
@@ -77,76 +77,86 @@ function App() {
   }
 
   return (
-    <div>
-      <Header />
+    <div className="flex h-full min-h-screen font-jura bg-hero bg-cover bg-center bg-fixed">
+      <div className="flex-1 mb-5">
+        <Header />
 
-      <h1>
-        Primary: <span className="font-bold">{primaryWeapon}</span>
-      </h1>
-      <div className="flex">
-        <h2>Primary Attachments:&nbsp;</h2>
-        {primaryAttachments.map((att) => (
-          <h2
-            key={att.name}
-            className="font-bold"
-          >{`${att.name} - ${att.attachment}, `}</h2>
-        ))}
+        {/* Randomize Button */}
+        <div className="flex flex-col items-center px-20 mt-5 space-y-10">
+          <button
+            className="bg-gradient-to-b from-topGray/80 to-bottomGray/90 text-white text-xl font-bold rounded-sm p-5 hover:from-orange/80 hover:to-red-500/90"
+            type="button"
+            onClick={() => {
+              randomizeClass();
+            }}
+          >
+            RANDOMIZE
+          </button>
+
+          {/* Primary Weapon and Primary Attachments */}
+          <div className="flex flex-col p-8 text-center text-white bg-gradient-to-b from-topGray/80 to-bottomGray/90 rounded-sm">
+            <h1 className="text-2xl">
+              <span className="font-bold">Primary:</span> {primaryWeapon}
+            </h1>
+            <div className="flex flex-col space-y-3 space-x-6 justify-center mt-3 items-stretch md:flex-row md:space-y-0">
+              {primaryAttachments.map((att) => (
+                <h2
+                  key={att.name}
+                  className="font-bold text-l"
+                >{`${att.name} - ${att.attachment} `}</h2>
+              ))}
+            </div>
+          </div>
+
+          {/* Secondary Weapon and Secondary Attachments */}
+          <div className="flex flex-col p-8 text-center text-white bg-gradient-to-b from-topGray/80 to-bottomGray/90 rounded-sm">
+            <h1 className="text-2xl">
+              <span className="font-bold">Secondary:</span> {secondaryWeapon}
+            </h1>
+            <div className="flex flex-col space-y-3 space-x-6 justify-center mt-3 items-stretch md:flex-row md:space-y-0">
+              {secondaryAttachments.map((att) => (
+                <h2
+                  key={att.name}
+                  className="font-bold text-l"
+                >{`${att.name} - ${att.attachment} `}</h2>
+              ))}
+            </div>
+          </div>
+
+          {/* Tactical */}
+          <div className="flex flex-col p-8 text-center text-white bg-gradient-to-b from-topGray/80 to-bottomGray/90 rounded-sm">
+            <h1 className="text-2xl">
+              <span className="font-bold">Tactical:</span> {tactical}
+            </h1>
+          </div>
+
+          {/* Lethal */}
+          <div className="flex flex-col p-8 text-center text-white bg-gradient-to-b from-topGray/80 to-bottomGray/90 rounded-sm">
+            <h1 className="text-2xl">
+              <span className="font-bold">Lethal:</span> {lethal}
+            </h1>
+          </div>
+
+          {/* Field Upgrades */}
+          <div className="flex flex-col p-8 text-center text-white bg-gradient-to-b from-topGray/80 to-bottomGray/90 rounded-sm">
+            <h1 className="text-2xl">
+              <span className="font-bold">Field Upgrades:</span>
+            </h1>
+            <h2 className="font-bold text-l">{fieldUpgrades[0]}</h2>
+            <h2 className="font-bold text-l">{fieldUpgrades[1]}</h2>
+          </div>
+
+          {/* KillStreaks */}
+          <div className="flex flex-col p-8 text-center text-white bg-gradient-to-b from-topGray/80 to-bottomGray/90 rounded-sm">
+            <h1 className="text-2xl">
+              <span className="font-bold">Killstreaks:</span>
+            </h1>
+            <h2 className="font-bold text-l">{killStreaks[0].streak}</h2>
+            <h2 className="font-bold text-l">{killStreaks[1].streak}</h2>
+            <h2 className="font-bold text-l">{killStreaks[2].streak}</h2>
+          </div>
+        </div>
       </div>
-      <h1>
-        Secondary: <span className="font-bold">{secondaryWeapon}</span>
-      </h1>
-      <div className="flex">
-        <h2>Secondary Attachments:&nbsp;</h2>
-        {secondaryAttachments.map((att) => (
-          <h2
-            key={att.name}
-            className="font-bold"
-          >{`${att.name} - ${att.attachment}, `}</h2>
-        ))}
-      </div>
-      <h1>
-        Tactical: <span className="font-bold">{tactical}</span>
-      </h1>
-      <h1>
-        Lethal: <span className="font-bold">{lethal}</span>
-      </h1>
-      <div className="flex">
-        <h1>Perks:&nbsp;</h1>
-        {perks.map((perk) => (
-          <h1 key={perk} className="font-bold">
-            {`${perk},`}&nbsp;
-          </h1>
-        ))}
-      </div>
-      <h1>
-        Field Upgrades:
-        {fieldUpgrades.length !== 0 ? (
-          <span className="font-bold">
-            {` ${fieldUpgrades[0]}, ${fieldUpgrades[1]}`}
-          </span>
-        ) : (
-          ""
-        )}
-      </h1>
-      <h1>
-        Killstreaks:
-        {killStreaks.length !== 0 ? (
-          <span className="font-bold">
-            {` ${killStreaks[0].streak}, ${killStreaks[1].streak}, ${killStreaks[2].streak}`}
-          </span>
-        ) : (
-          ""
-        )}
-      </h1>
-      <button
-        className="bg-white text-black font-bold rounded-full p-3 m-5 hover:bg-red-700"
-        type="button"
-        onClick={() => {
-          randomizeClass();
-        }}
-      >
-        Randomize
-      </button>
     </div>
   );
 }
