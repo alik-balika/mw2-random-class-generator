@@ -21,9 +21,11 @@ function App() {
   const [perks, setPerks] = useState([]);
   const [fieldUpgrades, setFieldUpgrades] = useState([]);
   const [killStreaks, setKillStreaks] = useState([]);
+  const [numAttachments, setNumAttachments] = useState(-1);
+  const [overkillAlwaysOn, setOverkillAlwaysOn] = useState(false);
 
   const randomizeClass = () => {
-    const perks = randomizePerks();
+    const perks = randomizePerks(overkillAlwaysOn);
     setPerks(perks);
     setTactical(randomizeTactical());
     setLethal(randomizeLethal());
@@ -32,7 +34,10 @@ function App() {
 
     const copy = JSON.parse(JSON.stringify(allWeapons));
 
-    let randomWeaponAndAttachments = randomizeWeapon(copy.primary);
+    let randomWeaponAndAttachments = randomizeWeapon(
+      copy.primary,
+      numAttachments
+    );
     setPrimaryWeapon(randomWeaponAndAttachments[0]);
     setPrimaryAttachments(randomWeaponAndAttachments[1]);
 
@@ -43,9 +48,21 @@ function App() {
       secondaryWeaponClass = copy.secondary;
     }
 
-    randomWeaponAndAttachments = randomizeWeapon(secondaryWeaponClass);
+    randomWeaponAndAttachments = randomizeWeapon(
+      secondaryWeaponClass,
+      numAttachments
+    );
     setSecondaryWeapon(randomWeaponAndAttachments[0]);
     setSecondaryAttachments(randomWeaponAndAttachments[1]);
+  };
+
+  const onChangeNumAttachments = (event) => {
+    setNumAttachments(event.target.value);
+  };
+
+  const onChangeOverkill = (event) => {
+    console.log(event.target.checked);
+    setOverkillAlwaysOn(event.target.checked);
   };
 
   if (!primaryWeapon) {
@@ -60,6 +77,45 @@ function App() {
               classes for whatever reasons they wish. Press the button below to
               generate a random class!
             </h1>
+
+            {/* Drop Down Menu for number of attachments */}
+            <div className="flex flex-col mt-10 p-8 text-center text-white bg-gradient-to-b from-topGray/80 to-bottomGray/90 rounded-sm">
+              <h1 className="p-2 max-w-lg text-xl text-center text-white font-bold">
+                Number of attachments:
+              </h1>
+              <div className="relative w-full lg:max-w-sm">
+                <select
+                  onChange={onChangeNumAttachments}
+                  className="w-full text-center p-2.5 text-gray-500 bg-white  border rounded-sm shadow-sm outline-none appearance-none focus:border-indigo-600"
+                >
+                  <option value={-1}>Random</option>
+                  <option value={0}>0</option>
+                  <option value={1}>1</option>
+                  <option value={2}>2</option>
+                  <option value={3}>3</option>
+                  <option value={4}>4</option>
+                  <option value={5}>5</option>
+                </select>
+              </div>
+
+              {/* Checkbox for Overkill always on */}
+              <div className="flex flex-row items-center justify-center mt-5">
+                <label
+                  class="form-check-label inline-block text-white"
+                  for="flexCheckDefault"
+                >
+                  Overkill always on:
+                </label>
+                <input
+                  class="form-check-input h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left ml-2 cursor-pointer"
+                  type="checkbox"
+                  value={false}
+                  checked={overkillAlwaysOn}
+                  onChange={onChangeOverkill}
+                />
+              </div>
+            </div>
+
             <button
               className="bg-gradient-to-b from-topGray/80 to-bottomGray/90 text-white text-xl font-bold rounded-sm p-5 mt-10 hover:from-orange/80 hover:to-red-500/90"
               type="button"
@@ -92,6 +148,44 @@ function App() {
           >
             RANDOMIZE
           </button>
+
+          {/* Drop Down Menu for number of attachments */}
+          <div className="flex flex-col mt-10 p-8 text-center text-white bg-gradient-to-b from-topGray/80 to-bottomGray/90 rounded-sm">
+            <h1 className="p-2 max-w-lg text-xl text-center text-white font-bold">
+              Number of attachments:
+            </h1>
+            <div className="relative w-full lg:max-w-sm">
+              <select
+                onChange={onChangeNumAttachments}
+                className="w-full text-center p-2.5 text-gray-500 bg-white  border rounded-sm shadow-sm outline-none appearance-none focus:border-indigo-600"
+              >
+                <option value={-1}>Random</option>
+                <option value={0}>0</option>
+                <option value={1}>1</option>
+                <option value={2}>2</option>
+                <option value={3}>3</option>
+                <option value={4}>4</option>
+                <option value={5}>5</option>
+              </select>
+            </div>
+
+            {/* Checkbox for Overkill always on */}
+            <div className="flex flex-row items-center justify-center mt-5">
+              <label
+                class="form-check-label inline-block text-white"
+                for="flexCheckDefault"
+              >
+                Overkill always on:
+              </label>
+              <input
+                class="form-check-input h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left ml-2 cursor-pointer"
+                type="checkbox"
+                value={false}
+                checked={overkillAlwaysOn}
+                onChange={onChangeOverkill}
+              />
+            </div>
+          </div>
 
           {/* Primary Weapon and Primary Attachments */}
           <div className="flex flex-col p-8 text-center text-white bg-gradient-to-b from-topGray/80 to-bottomGray/90 rounded-sm">

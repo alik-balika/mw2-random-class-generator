@@ -4,9 +4,6 @@ ARs: Chimera
 
 Double-check attachments on guns
 
-Add feature to allow users to pick how many attachments they want per gun
-Add feature to allow users to choose if they want Overkill
-
 Add Blocked features:
 X13 Auto -> All stocks and underbarrels are blocked unless the impact point barrel is chosen
             From optics "XRK On-Point Optic", "DF105 Reflex Sight", "Monocle CT90", "Corvus SOL-76", "SZ Recharge-DX", "SZ SRO-7", "Corio RE-X Pro", "Corio Enforcer Optic", "SZ Lonewolf Optic", "Kazan-Holo", "SZ Battle Optic", "Corvus Downrange-00", "SZ Holotherm", "Xten Angel-40" blocked unless impact barrel is chosen
