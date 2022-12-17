@@ -134,7 +134,7 @@ function App() {
 
   return (
     <div className="flex h-full min-h-screen font-jura bg-hero bg-cover bg-center bg-fixed">
-      <div className="flex-1 mb-5">
+      <div className="flex-1 mb-5 uppercase">
         <Header />
 
         {/* Randomize Button */}
