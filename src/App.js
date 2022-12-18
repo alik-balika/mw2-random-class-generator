@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useCallback, useEffect } from "react";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import { allWeapons } from "./util/data";
@@ -24,7 +24,30 @@ function App() {
   const [numAttachments, setNumAttachments] = useState(-1);
   const [overkillAlwaysOn, setOverkillAlwaysOn] = useState(false);
 
+  // Can use "r" to randomize class as well. Mainly for testing
+  const handleKeyPress = useCallback(
+    (event) => {
+      if (event.key === "r") {
+        randomizeClass();
+      }
+    },
+    [overkillAlwaysOn, numAttachments, primaryWeapon, secondaryWeapon]
+  );
+
+  useEffect(() => {
+    // attach the event listener
+    document.addEventListener("keydown", handleKeyPress);
+
+    // remove the event listener
+    return () => {
+      document.removeEventListener("keydown", handleKeyPress);
+    };
+  }, [handleKeyPress]);
+
   const randomizeClass = () => {
+    if (primaryWeapon === secondaryWeapon) {
+      console.log("Weapons are the same!! " + primaryWeapon);
+    }
     const perks = randomizePerks(overkillAlwaysOn);
     setPerks(perks);
     setTactical(randomizeTactical());
@@ -32,6 +55,8 @@ function App() {
     setFieldUpgrades(randomizeFieldUpgrades());
     setKillStreaks(randomizeKillStreaks());
 
+    // we copy the object so that the original stays unmodified
+    // otherwise next time, the weapons will disappear
     const copy = JSON.parse(JSON.stringify(allWeapons));
 
     let randomWeaponAndAttachments = randomizeWeapon(
@@ -40,6 +65,12 @@ function App() {
     );
     setPrimaryWeapon(randomWeaponAndAttachments[0]);
     setPrimaryAttachments(randomWeaponAndAttachments[1]);
+
+    // This is needed to ensure riot shield doesn't get picked twice
+    // when overkill is selected. So we remove the melee property
+    if (Object.keys(copy.primary.melee).length === 0) {
+      delete copy.primary.melee;
+    }
 
     let secondaryWeaponClass = null;
     if (perks.includes("Overkill")) {
@@ -101,17 +132,18 @@ function App() {
               {/* Checkbox for Overkill always on */}
               <div className="flex flex-row items-center justify-center mt-5">
                 <label
-                  class="form-check-label inline-block text-white"
-                  for="flexCheckDefault"
+                  className="form-check-label inline-block text-white"
+                  htmlFor="overkill"
                 >
                   Overkill always on:
                 </label>
                 <input
-                  class="form-check-input h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left ml-2 cursor-pointer"
+                  className="form-check-input h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left ml-2 cursor-pointer"
                   type="checkbox"
                   value={false}
                   checked={overkillAlwaysOn}
                   onChange={onChangeOverkill}
+                  id="overkill"
                 />
               </div>
             </div>
@@ -172,17 +204,18 @@ function App() {
             {/* Checkbox for Overkill always on */}
             <div className="flex flex-row items-center justify-center mt-5">
               <label
-                class="form-check-label inline-block text-white"
-                for="flexCheckDefault"
+                className="form-check-label inline-block text-white"
+                htmlFor="overkill"
               >
                 Overkill always on:
               </label>
               <input
-                class="form-check-input h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left ml-2 cursor-pointer"
+                className="form-check-input h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left ml-2 cursor-pointer"
                 type="checkbox"
                 value={false}
                 checked={overkillAlwaysOn}
                 onChange={onChangeOverkill}
+                id="overkill"
               />
             </div>
           </div>
