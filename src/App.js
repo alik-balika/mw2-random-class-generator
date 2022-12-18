@@ -98,11 +98,11 @@ function App() {
 
   if (!primaryWeapon) {
     return (
-      <div className="flex h-screen w-full font-jura">
+      <div className="flex h-full min-h-screen font-jura bg-hero bg-cover bg-center bg-fixed">
         <div className="flex-1 bg-hero bg-cover bg-center bg-no-repeat">
           <Header />
 
-          <div className="flex flex-col items-center mt-10 px-20">
+          <div className="flex flex-col items-center mt-10 px-20 mb-10">
             <h1 className="p-8 max-w-lg text-xl text-center text-white font-bold bg-gradient-to-b from-topGray/80 to-bottomGray/90 rounded-sm">
               Hi! This website was created to allow players to randomly generate
               classes for whatever reasons they wish. Press the button below to
